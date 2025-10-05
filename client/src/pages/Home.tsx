@@ -1,0 +1,25 @@
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import Features from "@/components/Features";
+import RosieDetails from "@/components/RosieDetails";
+import AgenticWorkflows from "@/components/AgenticWorkflows";
+import CaseStudies from "@/components/CaseStudies";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+
+export default function Home() {
+  return (
+    <div className="min-h-screen">
+      <Navigation />
+      <main>
+        <Hero />
+        <Features />
+        <RosieDetails />
+        <AgenticWorkflows />
+        <CaseStudies />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
+}
