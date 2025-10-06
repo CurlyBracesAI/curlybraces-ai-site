@@ -28,7 +28,7 @@ export default function Hero() {
       </div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-6 py-24 text-center">
-        <h1 className="font-bold leading-tight" data-testid="text-hero-title">
+        <h1 className="font-bold leading-tight mb-12" data-testid="text-hero-title">
           <span className="text-3xl md:text-4xl lg:text-5xl text-primary block mb-8">{"{"}curlybraces.ai{"}"}</span>
           <span className="text-5xl md:text-6xl lg:text-7xl text-foreground block">AI Automation that adapts and elevates your business</span>
         </h1>
