@@ -1,90 +1,63 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Bot, FileText, Mail, Database, FileSearch, ClipboardCheck } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function AgenticWorkflows() {
   const agents = [
     {
-      icon: FileText,
-      name: "Proposal Generator",
-      description: "Automatically creates customized client proposals from templates and CRM data",
-      status: "Active"
+      name: "Rosie AI Agent A — Client Shortlist Proposal:",
+      description: "Generates structured, client-ready proposals drawn directly from CRM deal data."
     },
     {
-      icon: Mail,
-      name: "Email Response Agent",
-      description: "Drafts context-aware email responses based on company guidelines and previous conversations",
-      status: "Active"
+      name: "Rosie AI Agent B — Client & Partner Tours:",
+      description: "Coordinates introductions and manages tour scheduling between clients and suite partners."
     },
     {
-      icon: Database,
-      name: "Data Integration Rosie",
-      description: "Syncs and transforms data across multiple platforms including CRMs, databases, and documentation systems",
-      status: "Active"
+      name: "Rosie AI Agent C — Daily Triage Report:",
+      description: "Reviews all deal and activity updates, producing concise daily internal reports."
     },
     {
-      icon: FileSearch,
-      name: "Document Analyzer",
-      description: "Reviews and extracts key information from client documents, contracts, and forms",
-      status: "Active"
+      name: "Rosie AI Agent D — Partner Intros Update:",
+      description: "Summarizes partner activity and drafts professional outreach updates automatically."
     },
     {
-      icon: ClipboardCheck,
-      name: "Compliance Checker",
-      description: "Ensures all generated documents meet regulatory and company compliance standards",
-      status: "Active"
+      name: "Rosie AI Agent E — AWS | Pipedrive | Wix Sync Updater:",
+      description: "Maintains cross-platform data integrity for listings, images, and metadata."
     },
     {
-      icon: Bot,
-      name: "Workflow Orchestrator",
-      description: "Coordinates multiple AI agents to complete complex multi-step business processes",
-      status: "Active"
+      name: "Rosie AI Agent F — New Inventory Finder:",
+      description: "Identifies new office and partner opportunities across public and private data sources."
     }
   ];
 
   return (
-    <section className="py-24 px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+    <section id="current-agents" className="py-24 px-6">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-workflows-title">
             Current Agentic Workflows
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-workflows-subtitle">
-            Our suite of specialized AI agents working together to automate your business processes
+          <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-workflows-subtitle">
+            Our team continues to expand Rosie's operational intelligence, building agentic systems that already run in production.
+            Each is designed for precision, context-aware automation, and seamless hand-off between platforms.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {agents.map((agent, index) => {
-            const Icon = agent.icon;
-            return (
-              <Card key={index} className="hover-elevate transition-all duration-200" data-testid={`card-agent-${index}`}>
-                <CardHeader className="pb-4">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-5 h-5 text-primary" />
-                    </div>
-                    <Badge 
-                      className="bg-chart-2/10 text-chart-2 border-chart-2/20 hover:bg-chart-2/15" 
-                      data-testid={`badge-agent-status-${index}`}
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full bg-chart-2 mr-1.5" />
-                      {agent.status}
-                    </Badge>
-                  </div>
-                  <CardTitle className="text-lg mt-3" data-testid={`text-agent-name-${index}`}>
-                    {agent.name}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="pt-0">
-                  <p className="text-sm text-muted-foreground leading-relaxed" data-testid={`text-agent-description-${index}`}>
-                    {agent.description}
-                  </p>
-                </CardContent>
-              </Card>
-            );
-          })}
+        <div className="space-y-6 mb-12">
+          {agents.map((agent, index) => (
+            <Card key={index} className="hover-elevate transition-all duration-200" data-testid={`card-agent-${index}`}>
+              <CardContent className="p-6">
+                <p className="leading-relaxed" data-testid={`text-agent-${index}`}>
+                  <strong className="text-foreground">{agent.name}</strong>{" "}
+                  <span className="text-muted-foreground">{agent.description}</span>
+                </p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
+
+        <p className="text-center text-muted-foreground leading-relaxed" data-testid="text-workflows-footer">
+          We continue to grow this suite of agents and are actively inviting partners to join our{" "}
+          <strong className="text-foreground">beta testing program</strong> — particularly those seeking custom, domain-specific AI solutions built for their own workflows.
+        </p>
       </div>
     </section>
   );
