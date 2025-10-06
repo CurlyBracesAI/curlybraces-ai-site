@@ -19,7 +19,7 @@ export default function Hero() {
     <section className="relative min-h-[85vh] flex items-center overflow-hidden">
       <NeuralBackground />
       
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full pointer-events-none z-0 hidden lg:flex items-center justify-end pr-12">
+      <div className="absolute right-0 top-0 w-1/2 h-full pointer-events-none z-0 hidden lg:flex items-start justify-end pr-12 pt-24">
         <div className="w-[500px] h-[500px] relative">
           <img 
             src={brainImage} 
