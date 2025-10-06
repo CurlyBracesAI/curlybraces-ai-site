@@ -29,9 +29,19 @@ export default function Features() {
   return (
     <section id="features" className="relative py-24 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-start gap-12 mb-16">
-          <div className="lg:w-1/2 relative">
-            <div className="relative">
+        <div className="flex flex-col lg:flex-row items-stretch gap-12 mb-16">
+          <div className="lg:w-1/2 flex items-stretch">
+            <div className="w-full relative flex items-stretch">
+              <img 
+                src={sphereImage} 
+                alt="" 
+                className="w-full h-auto opacity-60 object-contain"
+              />
+            </div>
+          </div>
+          
+          <div className="lg:w-1/2 flex flex-col justify-between">
+            <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-left" data-testid="text-features-title">
                 AI Automation for Modern Teams
               </h2>
@@ -45,14 +55,6 @@ export default function Features() {
               <p className="text-lg text-muted-foreground leading-relaxed text-left">
                 Whether you're managing hundreds of client proposals, reviewing partner data, or generating daily operations reports, Rosie turns hours of manual effort into minutes of effortless automation.
               </p>
-              
-              <div className="absolute right-full top-0 bottom-0 w-[500px] pr-12 pointer-events-none z-0 hidden lg:block">
-                <img 
-                  src={sphereImage} 
-                  alt="" 
-                  className="w-full h-full opacity-60 object-cover"
-                />
-              </div>
             </div>
           </div>
         </div>
