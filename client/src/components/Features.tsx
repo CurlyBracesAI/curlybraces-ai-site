@@ -36,8 +36,8 @@ export default function Features() {
             Built for precision. Designed to scale.
           </p>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto mt-6 leading-relaxed">
-            Rosie isn't just an AI writer — it's a complete automation layer for your business.
-            It learns your workflows, mirrors your tone, and works seamlessly across your tools — producing clean, consistent, on-brand results at any scale.
+            Rosie isn't just an AI writer, it's a complete automation layer for your business.
+            It learns your workflows, mirrors your tone, and works seamlessly across your tools, producing clean, consistent, on-brand results at any scale.
           </p>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto mt-4 leading-relaxed">
             Whether you're managing hundreds of client proposals, reviewing partner data, or generating daily operations reports, Rosie turns hours of manual effort into minutes of effortless automation.
