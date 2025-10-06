@@ -2,6 +2,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import NeuralBackground from "./NeuralBackground";
+import brainImage from "@assets/background1_1759787585993.jpg";
 
 export default function Hero() {
   const handleGetStarted = () => {
@@ -17,6 +18,14 @@ export default function Hero() {
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       <NeuralBackground />
+      
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full pointer-events-none z-0 hidden lg:block">
+        <img 
+          src={brainImage} 
+          alt="" 
+          className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-auto opacity-30 object-contain"
+        />
+      </div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-6 py-24 text-center">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" data-testid="text-hero-title">

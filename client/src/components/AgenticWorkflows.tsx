@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import sphereImage from "@assets/background_1759787586001.jpg";
 
 export default function AgenticWorkflows() {
   const agents = [
@@ -29,8 +30,16 @@ export default function AgenticWorkflows() {
   ];
 
   return (
-    <section id="current-agents" className="py-24 px-6">
-      <div className="max-w-4xl mx-auto">
+    <section id="current-agents" className="relative py-24 px-6 overflow-hidden">
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <img 
+          src={sphereImage} 
+          alt="" 
+          className="w-[500px] h-auto opacity-20 object-contain"
+        />
+      </div>
+      
+      <div className="relative z-10 max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-workflows-title">
             Current Agentic Workflows
