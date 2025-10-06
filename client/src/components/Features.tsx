@@ -1,22 +1,27 @@
-import { Zap, Database, Target } from "lucide-react";
+import { Zap, Database, Target, Sparkles } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function Features() {
   const features = [
     {
-      icon: Zap,
-      title: "Trained to your company's specifications",
-      description: "Writes at scale in seconds"
+      icon: Sparkles,
+      title: "Custom-trained to your business",
+      description: "Fully tailored logic and language for your processes"
     },
     {
-      icon: Database,
-      title: "Built to process thousands of inputs",
-      description: "Across forms, databases, CRMs, client platforms, and specialist documentation flows"
+      icon: Zap,
+      title: "Runs at any scale",
+      description: "From one to one thousand automations per day"
     },
     {
       icon: Target,
-      title: "Designed for professionals who need precision",
-      description: "And the ability to execute at large volume"
+      title: "Delivers human-grade quality",
+      description: "Context-aware, detail-perfect, and ready for delivery"
+    },
+    {
+      icon: Database,
+      title: "Integrates seamlessly",
+      description: "Built to sync with your CRM, files, and communications stack"
     }
   ];
 
@@ -25,11 +30,25 @@ export default function Features() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-features-title">
-            AI Automation: Transforming Productivity,<br />Efficiency, and Operational Excellence
+            AI Automation for Modern Teams
           </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Built for precision. Designed to scale.
+          </p>
+          <p className="text-lg text-muted-foreground max-w-4xl mx-auto mt-6 leading-relaxed">
+            Rosie isn't just an AI writer — it's a complete automation layer for your business.
+            It learns your workflows, mirrors your tone, and works seamlessly across your tools — producing clean, consistent, on-brand results at any scale.
+          </p>
+          <p className="text-lg text-muted-foreground max-w-4xl mx-auto mt-4 leading-relaxed">
+            Whether you're managing hundreds of client proposals, reviewing partner data, or generating daily operations reports, Rosie turns hours of manual effort into minutes of effortless automation.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <h3 className="text-2xl md:text-3xl font-bold text-center mb-12" data-testid="text-features-subtitle">
+          Smarter Workflows. Real Results.
+        </h3>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (

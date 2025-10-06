@@ -1,39 +1,66 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Building2, Compass, Heart, Scale } from "lucide-react";
 
 export default function RosieDetails() {
+  const industries = [
+    {
+      icon: Building2,
+      title: "Real Estate",
+      description: "Generates and sends curated property proposals automatically"
+    },
+    {
+      icon: Compass,
+      title: "Architecture & Engineering",
+      description: "Drafts tailored RFP responses and zoning memos"
+    },
+    {
+      icon: Heart,
+      title: "Healthcare & Wellness",
+      description: "Handles intake, scheduling, and client communications"
+    },
+    {
+      icon: Scale,
+      title: "Legal & Finance",
+      description: "Produces compliant, consistent documentation at scale"
+    }
+  ];
+
   return (
     <section className="py-24 px-6 bg-card/30">
-      <div className="max-w-4xl mx-auto">
-        <Card className="border-primary/20 bg-card/50 backdrop-blur-sm">
-          <CardContent className="p-8 md:p-12 space-y-6">
-            <h3 className="text-2xl md:text-3xl font-bold text-center mb-8" data-testid="text-rosie-title">
-              Introducing Rosie — our AI proposal & document assistant
-            </h3>
-            
-            <p className="text-lg text-foreground leading-relaxed" data-testid="text-rosie-description-1">
-              Rosie is a custom-trained generative AI automation agent. Designed to produce high-volume, 
-              highly-detailed client reports tailored to your company's workflows. Drafting individual, 
-              focused, on-brand proposals that scale with you — from five, to five hundred, to five 
-              thousand individually curated documents, all at the touch of a button.
-            </p>
-            
-            <p className="text-lg text-foreground leading-relaxed" data-testid="text-rosie-description-2">
-              Rosie curates, formats, and personalizes your client proposals and reports with context-aware 
-              intelligence — producing multiple custom, detailed documents. Freeing up your team, working 
-              instantly across all your tools, and never skipping a detail.
-            </p>
-            
-            <div className="pt-6 border-t border-border">
-              <p className="text-base text-muted-foreground leading-relaxed" data-testid="text-rosie-use-cases">
-                Whether you're a real estate firm sending endless client proposals, an accounting team 
-                preparing continuous onboarding packets, an attorney practice sending multiple defendant 
-                demands, or a healthcare practice chasing down vast numbers of intake forms — we design 
-                AI-powered automated systems that remove repetitive chores to free up your personnel and 
-                power your business.
-              </p>
-            </div>
-          </CardContent>
-        </Card>
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-rosie-title">
+            Built for Professionals Who Need Precision
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-rosie-subtitle">
+            Rosie powers automated workflows across multiple industries
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          {industries.map((industry, index) => {
+            const Icon = industry.icon;
+            return (
+              <Card key={index} className="hover-elevate transition-all duration-200" data-testid={`card-industry-${index}`}>
+                <CardContent className="p-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2" data-testid={`text-industry-title-${index}`}>
+                    {industry.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed" data-testid={`text-industry-description-${index}`}>
+                    {industry.description}
+                  </p>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
+
+        <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto" data-testid="text-rosie-footer">
+          Wherever accuracy and volume matter, Rosie scales with you.
+        </p>
       </div>
     </section>
   );

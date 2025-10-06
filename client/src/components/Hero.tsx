@@ -19,20 +19,16 @@ export default function Hero() {
       <NeuralBackground />
       
       <div className="relative z-10 max-w-4xl mx-auto px-6 py-24 text-center">
-        <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 hover:bg-primary/15" data-testid="badge-announcement">
-          <Sparkles className="w-3 h-3 mr-1.5" />
-          We're offering a limited number of case studies
-        </Badge>
-
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" data-testid="text-hero-title">
           <span className="text-primary">{"{"}curlybraces.ai{"}"}</span>
           <br />
-          <span className="text-foreground">Generative AI Automation that naturally adapts to your business</span>
+          <span className="text-foreground">AI Automation that adapts — and elevates — your business</span>
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed" data-testid="text-hero-subtitle">
-          Introducing <strong className="text-foreground">Rosie</strong> — our AI proposal & document assistant. 
-          Designed to produce high-volume, highly-detailed client reports tailored to your company's workflows.
+          Meet <strong className="text-foreground">Rosie</strong>, our intelligent workflow assistant built for real-world performance.
+          <br />
+          From client proposals to end-to-end operations, Rosie automates the repetitive, the manual, and the mundane — freeing your team to focus on strategy, creativity, and growth.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

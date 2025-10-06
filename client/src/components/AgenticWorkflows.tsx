@@ -3,28 +3,28 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function AgenticWorkflows() {
   const agents = [
     {
-      name: "Rosie AI Agent A — Client Shortlist Proposal:",
-      description: "Generates structured, client-ready proposals drawn directly from CRM deal data."
+      name: "Agent A — Client Proposal Engine:",
+      description: "Creates structured, branded proposals instantly."
     },
     {
-      name: "Rosie AI Agent B — Client & Partner Tours:",
-      description: "Coordinates introductions and manages tour scheduling between clients and suite partners."
+      name: "Agent B — Client & Partner Tours:",
+      description: "Automates scheduling and introductions."
     },
     {
-      name: "Rosie AI Agent C — Daily Triage Report:",
-      description: "Reviews all deal and activity updates, producing concise daily internal reports."
+      name: "Agent C — Daily Triage Reports:",
+      description: "Summarizes activity and performance updates."
     },
     {
-      name: "Rosie AI Agent D — Partner Intros Update:",
-      description: "Summarizes partner activity and drafts professional outreach updates automatically."
+      name: "Agent D — Partner Updates:",
+      description: "Drafts personalized monthly outreach emails."
     },
     {
-      name: "Rosie AI Agent E — AWS | Pipedrive | Wix Sync Updater:",
-      description: "Maintains cross-platform data integrity for listings, images, and metadata."
+      name: "Agent E — Content Sync:",
+      description: "Maintains cross-platform consistency for data and listings."
     },
     {
-      name: "Rosie AI Agent F — New Inventory Finder:",
-      description: "Identifies new office and partner opportunities across public and private data sources."
+      name: "Agent F — Market Finder:",
+      description: "Scans public and private data for new opportunities."
     }
   ];
 
@@ -36,8 +36,7 @@ export default function AgenticWorkflows() {
             Current Agentic Workflows
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-workflows-subtitle">
-            Our team continues to expand Rosie's operational intelligence, building agentic systems that already run in production.
-            Each is designed for precision, context-aware automation, and seamless hand-off between platforms.
+            Each Rosie Agent represents a specialized automation built and running in production:
           </p>
         </div>
 
@@ -55,8 +54,8 @@ export default function AgenticWorkflows() {
         </div>
 
         <p className="text-center text-muted-foreground leading-relaxed" data-testid="text-workflows-footer">
-          We continue to grow this suite of agents and are actively inviting partners to join our{" "}
-          <strong className="text-foreground">beta testing program</strong> — particularly those seeking custom, domain-specific AI solutions built for their own workflows.
+          We continue to expand Rosie's agent library and invite partners to join our{" "}
+          <strong className="text-foreground">beta program</strong> for custom domain-specific builds.
         </p>
       </div>
     </section>

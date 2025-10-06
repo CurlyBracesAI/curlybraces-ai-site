@@ -46,11 +46,11 @@ export default function Contact() {
 
             <div className="pt-6 border-t border-border text-center">
               <p className="text-sm text-muted-foreground mb-4" data-testid="text-contact-beta-note">
-                *CurlyBraces is an AI tech start-up. We are looking for case studies to refine our 
-                automation models presently in beta mode. Free build of your customized Rosie!
+                CurlyBraces.ai is currently onboarding beta partners for custom AI builds.
+                Selected participants receive free implementation in exchange for case study participation.
               </p>
               <p className="text-xs text-muted-foreground italic" data-testid="text-contact-disclaimer">
-                AI can make mistakes. Check important info.
+                AI can make mistakes. Review all generated content for accuracy.
               </p>
             </div>
           </CardContent>
