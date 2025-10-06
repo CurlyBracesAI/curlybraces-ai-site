@@ -19,17 +19,14 @@ export default function Hero() {
     <section className="relative min-h-[85vh] flex items-center overflow-hidden">
       <NeuralBackground />
       
-      <div className="absolute right-0 top-0 w-1/2 h-full pointer-events-none z-0 hidden lg:flex items-start justify-end pr-12 pt-24">
-        <div className="w-[500px] h-[500px] relative">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 w-full flex items-center">
+        <div className="absolute right-12 top-24 w-[500px] h-[500px] pointer-events-none z-0 hidden lg:block">
           <img 
             src={brainImage} 
             alt="" 
             className="w-full h-full opacity-50 object-cover"
           />
         </div>
-      </div>
-      
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 w-full">
         <div className="lg:w-1/2 lg:pr-12">
           <h1 className="font-bold leading-tight mb-10 text-left" data-testid="text-hero-title">
             <span className="text-2xl md:text-3xl lg:text-4xl text-primary block mb-6">{"{"}curlybraces.ai{"}"}</span>
