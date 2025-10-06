@@ -29,29 +29,31 @@ export default function Features() {
   return (
     <section id="features" className="relative py-24 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
-          <div className="lg:w-1/2 flex items-center justify-center">
-            <img 
-              src={sphereImage} 
-              alt="" 
-              className="w-full max-w-[500px] h-auto opacity-60 object-contain"
-            />
-          </div>
-          
-          <div className="lg:w-1/2">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-left" data-testid="text-features-title">
-              AI Automation for Modern Teams
-            </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed text-left mb-6">
-              Built for precision. Designed to scale.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed text-left mb-4">
-              Rosie isn't just an AI writer, it's a complete automation layer for your business.
-              It learns your workflows, mirrors your tone, and works seamlessly across your tools, producing clean, consistent, on-brand results at any scale.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed text-left">
-              Whether you're managing hundreds of client proposals, reviewing partner data, or generating daily operations reports, Rosie turns hours of manual effort into minutes of effortless automation.
-            </p>
+        <div className="flex flex-col lg:flex-row items-start gap-12 mb-16">
+          <div className="lg:w-1/2 relative">
+            <div className="relative">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-left" data-testid="text-features-title">
+                AI Automation for Modern Teams
+              </h2>
+              <p className="text-xl text-muted-foreground leading-relaxed text-left mb-6">
+                Built for precision. Designed to scale.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed text-left mb-4">
+                Rosie isn't just an AI writer, it's a complete automation layer for your business.
+                It learns your workflows, mirrors your tone, and works seamlessly across your tools, producing clean, consistent, on-brand results at any scale.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed text-left">
+                Whether you're managing hundreds of client proposals, reviewing partner data, or generating daily operations reports, Rosie turns hours of manual effort into minutes of effortless automation.
+              </p>
+              
+              <div className="absolute right-full top-0 bottom-0 w-[500px] pr-12 pointer-events-none z-0 hidden lg:block">
+                <img 
+                  src={sphereImage} 
+                  alt="" 
+                  className="w-full h-full opacity-60 object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
