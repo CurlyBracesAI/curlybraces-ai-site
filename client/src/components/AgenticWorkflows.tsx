@@ -32,26 +32,24 @@ export default function AgenticWorkflows() {
   return (
     <section id="current-agents" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-workflows-title">
-          Current Agentic Workflows
-        </h2>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-12" data-testid="text-workflows-subtitle">
-          Each Rosie Agent represents a specialized automation built and running in production:
-        </p>
-
-        <div className="flex flex-col lg:flex-row gap-12 mb-8">
-          <div className="lg:w-1/2">
-            <div className="h-full">
-              <img 
-                src={snakeImage} 
-                alt="" 
-                className="w-full h-full object-cover"
-              />
-            </div>
+        <div className="flex flex-col lg:flex-row gap-12 items-start">
+          <div className="lg:w-1/2 flex items-stretch">
+            <img 
+              src={snakeImage} 
+              alt="" 
+              className="w-full h-auto object-contain"
+            />
           </div>
 
-          <div className="lg:w-1/2">
-            <div className="space-y-6">
+          <div className="lg:w-1/2 flex flex-col">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 max-w-md" data-testid="text-workflows-title">
+              Current Agentic Workflows
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-md" data-testid="text-workflows-subtitle">
+              Each Rosie Agent represents a specialized automation built and running in production:
+            </p>
+
+            <div className="space-y-6 mb-8">
               {agents.map((agent, index) => (
                 <Card key={index} className="hover-elevate transition-all duration-200" data-testid={`card-agent-${index}`}>
                   <CardContent className="p-6">
@@ -63,13 +61,13 @@ export default function AgenticWorkflows() {
                 </Card>
               ))}
             </div>
+
+            <p className="text-muted-foreground leading-relaxed max-w-md" data-testid="text-workflows-footer">
+              We continue to expand Rosie's agent library and invite partners to join our{" "}
+              <strong className="text-foreground">beta program</strong> for custom domain-specific builds.
+            </p>
           </div>
         </div>
-
-        <p className="text-muted-foreground leading-relaxed max-w-3xl" data-testid="text-workflows-footer">
-          We continue to expand Rosie's agent library and invite partners to join our{" "}
-          <strong className="text-foreground">beta program</strong> for custom domain-specific builds.
-        </p>
       </div>
     </section>
   );
