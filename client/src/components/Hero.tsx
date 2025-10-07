@@ -30,7 +30,7 @@ export default function Hero() {
             <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed text-left" data-testid="text-hero-subtitle">
               In nature, adaptation defines survival. Powered by <strong className="text-foreground">Rosie</strong>, our intelligent AI workflow assistant is built for real-world performance.
               <br />
-              From client proposals to end-to-end operations, Rosie automates the repetitive, the manual, and the mundane, freeing your team to focus on strategy, creativity, and growth.
+              From detailed client proposals to end-to-end operations, Rosie automates the repetitive, the manual, and the mundane, freeing your team to focus on strategy, creativity, and growth.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start gap-4">
