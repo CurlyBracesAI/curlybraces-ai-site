@@ -44,7 +44,7 @@ export default function AgenticWorkflows() {
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch flex flex-col gap-8 mb-8">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch flex flex-col gap-8 mb-2">
           <div className="flex items-stretch">
             <img 
               src={snakeImage} 
