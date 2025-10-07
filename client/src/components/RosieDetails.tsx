@@ -29,16 +29,16 @@ export default function RosieDetails() {
   return (
     <section className="py-24 px-6 bg-card/30">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-stretch gap-12 mb-16">
-          <div className="lg:w-1/2">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-rosie-title">
-              Built for Professionals Who Need Precision
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8" data-testid="text-rosie-subtitle">
-              Rosie powers automated workflows across multiple industries
-            </p>
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center lg:text-left" data-testid="text-rosie-title">
+          Built for Professionals Who Need Precision
+        </h2>
+        <p className="text-xl text-muted-foreground mb-12 text-center lg:text-left max-w-3xl" data-testid="text-rosie-subtitle">
+          Rosie powers automated workflows across multiple industries
+        </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div className="flex flex-col lg:flex-row items-stretch gap-12 mb-12">
+          <div className="lg:w-1/2 relative">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {industries.map((industry, index) => {
                 const Icon = industry.icon;
                 return (
@@ -58,22 +58,22 @@ export default function RosieDetails() {
                 );
               })}
             </div>
-
-            <p className="text-lg text-muted-foreground" data-testid="text-rosie-footer">
-              Wherever accuracy and volume matter, Rosie scales with you.
-            </p>
           </div>
 
           <div className="lg:w-1/2 flex items-stretch">
-            <div className="w-full relative flex items-stretch">
+            <div className="w-full relative">
               <img 
                 src={cuttlefishImage} 
                 alt="" 
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
         </div>
+
+        <p className="text-lg text-muted-foreground text-center lg:text-left max-w-3xl" data-testid="text-rosie-footer">
+          Wherever accuracy and volume matter, Rosie scales with you.
+        </p>
       </div>
     </section>
   );
