@@ -32,18 +32,8 @@ export default function AgenticWorkflows() {
   return (
     <section id="current-agents" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-stretch gap-12">
-          <div className="lg:w-1/2 flex items-stretch">
-            <div className="w-full relative flex items-stretch">
-              <img 
-                src={snakeImage} 
-                alt="" 
-                className="w-full h-auto object-contain"
-              />
-            </div>
-          </div>
-
-          <div className="lg:w-1/2">
+        <div className="flex flex-col lg:flex-row gap-12">
+          <div className="lg:w-1/2 relative">
             <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-workflows-title">
               Current Agentic Workflows
             </h2>
@@ -64,6 +54,16 @@ export default function AgenticWorkflows() {
               ))}
             </div>
 
+            <div className="absolute right-full top-0 bottom-8 w-[500px] pr-12 pointer-events-none z-0 hidden lg:block">
+              <img 
+                src={snakeImage} 
+                alt="" 
+                className="w-full h-full object-cover object-bottom"
+              />
+            </div>
+          </div>
+
+          <div className="lg:w-1/2">
             <p className="text-muted-foreground leading-relaxed" data-testid="text-workflows-footer">
               We continue to expand Rosie's agent library and invite partners to join our{" "}
               <strong className="text-foreground">beta program</strong> for custom domain-specific builds.
