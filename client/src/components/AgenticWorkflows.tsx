@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import octopusImage from "@assets/stock_images/octopus_camouflage_u_032b33bc.jpg";
+import snakeImage from "@assets/stock_images/snake_vertical_portr_38647f22.jpg";
 
 export default function AgenticWorkflows() {
   const agents = [
@@ -36,7 +36,7 @@ export default function AgenticWorkflows() {
           <div className="lg:w-1/2 flex items-stretch">
             <div className="w-full relative flex items-stretch">
               <img 
-                src={octopusImage} 
+                src={snakeImage} 
                 alt="" 
                 className="w-full h-auto object-contain"
               />
