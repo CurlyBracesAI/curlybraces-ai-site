@@ -33,7 +33,7 @@ export default function AgenticWorkflows() {
     <section id="current-agents" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-12 items-start">
-          <div className="lg:w-1/2 flex items-stretch">
+          <div className="lg:w-1/2 flex items-stretch lg:mt-36">
             <img 
               src={snakeImage} 
               alt="" 
