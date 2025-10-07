@@ -32,48 +32,42 @@ export default function AgenticWorkflows() {
   return (
     <section id="current-agents" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12 flex flex-col gap-8">
-          <div className="flex flex-col">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 max-w-md lg:invisible lg:h-0" data-testid="text-workflows-title">
-              Current Agentic Workflows
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-md lg:invisible lg:h-0" data-testid="text-workflows-subtitle">
-              Each Rosie Agent represents a specialized automation built and running in production:
-            </p>
+        <div className="lg:ml-auto lg:max-w-2xl mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 max-w-md" data-testid="text-workflows-title">
+            Current Agentic Workflows
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-md" data-testid="text-workflows-subtitle">
+            Each Rosie Agent represents a specialized automation built and running in production:
+          </p>
+        </div>
+
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch flex flex-col gap-8 mb-8">
+          <div className="flex items-stretch">
             <img 
               src={snakeImage} 
               alt="" 
-              className="w-full h-auto object-contain"
+              className="w-full h-full object-cover"
             />
           </div>
 
-          <div className="flex flex-col">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 max-w-md hidden lg:block" data-testid="text-workflows-title">
-              Current Agentic Workflows
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-md hidden lg:block" data-testid="text-workflows-subtitle">
-              Each Rosie Agent represents a specialized automation built and running in production:
-            </p>
-
-            <div className="space-y-6 mb-8">
-              {agents.map((agent, index) => (
-                <Card key={index} className="hover-elevate transition-all duration-200" data-testid={`card-agent-${index}`}>
-                  <CardContent className="p-6">
-                    <p className="leading-relaxed" data-testid={`text-agent-${index}`}>
-                      <strong className="text-foreground">{agent.name}</strong>{" "}
-                      <span className="text-muted-foreground">{agent.description}</span>
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            <p className="text-muted-foreground leading-relaxed max-w-md" data-testid="text-workflows-footer">
-              We continue to expand Rosie's agent library and invite partners to join our{" "}
-              <strong className="text-foreground">beta program</strong> for custom domain-specific builds.
-            </p>
+          <div className="space-y-6">
+            {agents.map((agent, index) => (
+              <Card key={index} className="hover-elevate transition-all duration-200" data-testid={`card-agent-${index}`}>
+                <CardContent className="p-6">
+                  <p className="leading-relaxed" data-testid={`text-agent-${index}`}>
+                    <strong className="text-foreground">{agent.name}</strong>{" "}
+                    <span className="text-muted-foreground">{agent.description}</span>
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
+
+        <p className="text-muted-foreground leading-relaxed max-w-md lg:ml-auto lg:max-w-2xl" data-testid="text-workflows-footer">
+          We continue to expand Rosie's agent library and invite partners to join our{" "}
+          <strong className="text-foreground">beta program</strong> for custom domain-specific builds.
+        </p>
       </div>
     </section>
   );
