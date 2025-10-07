@@ -32,8 +32,14 @@ export default function AgenticWorkflows() {
   return (
     <section id="current-agents" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row gap-12 items-start">
-          <div className="lg:w-1/2 flex items-stretch lg:mt-36">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 flex flex-col gap-8">
+          <div className="flex flex-col">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 max-w-md lg:invisible lg:h-0" data-testid="text-workflows-title">
+              Current Agentic Workflows
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-md lg:invisible lg:h-0" data-testid="text-workflows-subtitle">
+              Each Rosie Agent represents a specialized automation built and running in production:
+            </p>
             <img 
               src={snakeImage} 
               alt="" 
@@ -41,11 +47,11 @@ export default function AgenticWorkflows() {
             />
           </div>
 
-          <div className="lg:w-1/2 flex flex-col">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 max-w-md" data-testid="text-workflows-title">
+          <div className="flex flex-col">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 max-w-md hidden lg:block" data-testid="text-workflows-title">
               Current Agentic Workflows
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-md" data-testid="text-workflows-subtitle">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-md hidden lg:block" data-testid="text-workflows-subtitle">
               Each Rosie Agent represents a specialized automation built and running in production:
             </p>
 
