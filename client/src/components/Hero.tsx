@@ -28,7 +28,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed text-left" data-testid="text-hero-subtitle">
-              Meet <strong className="text-foreground">Rosie</strong>, our intelligent workflow assistant built for real-world performance.
+              Powered by <strong className="text-foreground">Rosie</strong>, our intelligent AI workflow assistant built for real-world performance.
               <br />
               From client proposals to end-to-end operations, Rosie automates the repetitive, the manual, and the mundane, freeing your team to focus on strategy, creativity, and growth.
             </p>
