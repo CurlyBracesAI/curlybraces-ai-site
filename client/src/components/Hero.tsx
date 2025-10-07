@@ -58,7 +58,7 @@ export default function Hero() {
               <img 
                 src={arcticFoxImage} 
                 alt="" 
-                className="w-full h-full opacity-50 object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

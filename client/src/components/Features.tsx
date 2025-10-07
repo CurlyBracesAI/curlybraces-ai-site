@@ -35,7 +35,7 @@ export default function Features() {
               <img 
                 src={cuttlefishImage} 
                 alt="" 
-                className="w-full h-auto opacity-60 object-contain"
+                className="w-full h-auto object-contain"
               />
             </div>
           </div>
