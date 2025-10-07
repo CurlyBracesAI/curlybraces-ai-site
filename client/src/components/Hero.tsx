@@ -24,11 +24,11 @@ export default function Hero() {
           <div className="relative">
             <h1 className="font-bold leading-tight mb-10 text-left" data-testid="text-hero-title">
               <span className="text-2xl md:text-3xl lg:text-4xl text-primary block mb-6">{"{"}curlybraces.ai{"}"}</span>
-              <span className="text-4xl md:text-5xl lg:text-6xl text-foreground block">AI Automation that adapts and elevates your business</span>
+              <span className="text-4xl md:text-5xl lg:text-6xl text-foreground block">AI Automation that adapts to your business</span>
             </h1>
 
             <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed text-left" data-testid="text-hero-subtitle">
-              Powered by <strong className="text-foreground">Rosie</strong>, our intelligent AI workflow assistant built for real-world performance.
+              In nature, adaptation defines survival. Powered by <strong className="text-foreground">Rosie</strong>, our intelligent AI workflow assistant is built for real-world performance.
               <br />
               From client proposals to end-to-end operations, Rosie automates the repetitive, the manual, and the mundane, freeing your team to focus on strategy, creativity, and growth.
             </p>
