@@ -30,7 +30,7 @@ export default function RosieDetails() {
     <section className="py-24 px-6 bg-card/30">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center lg:text-left" data-testid="text-rosie-title">
-          Built for Professionals Who Need Precision
+          Built for Professionals<br />Who Need Precision
         </h2>
         <p className="text-xl text-muted-foreground mb-12 text-center lg:text-left max-w-3xl" data-testid="text-rosie-subtitle">
           Rosie powers automated workflows across multiple industries
