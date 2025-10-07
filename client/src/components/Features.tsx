@@ -43,7 +43,7 @@ export default function Features() {
           <div className="lg:w-1/2 flex flex-col justify-between">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-left" data-testid="text-features-title">
-                AI that Adapts to your Team
+                AI that Adapts to your Team's Workflow
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed text-left mb-6">
                 Built for precision. Designed to scale.
