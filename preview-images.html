@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Images Preview - Adaptive Creatures</title>
+    <style>
+        body {
+            background: #0a0a0a;
+            color: #fff;
+            font-family: system-ui, -apple-system, sans-serif;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #00d9ff;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .category {
+            margin-bottom: 60px;
+        }
+        .category h2 {
+            color: #00d9ff;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #00d9ff;
+            padding-bottom: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .image-card {
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid #333;
+        }
+        .image-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .image-card img:hover {
+            transform: scale(1.05);
+        }
+        .image-name {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #888;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>🦎 Adaptive Nature Images - Pick Your Favorites!</h1>
+
+    <div class="category">
+        <h2>🦎 Chameleons - Masters of Color Adaptation</h2>
+        <div class="grid">
+            <div class="image-card">
+                <img src="attached_assets/stock_images/chameleon_changing_c_79e0fb76.jpg" alt="Chameleon 1">
+                <div class="image-name">chameleon_changing_c_79e0fb76.jpg</div>
+            </div>
+            <div class="image-card">
+                <img src="attached_assets/stock_images/chameleon_changing_c_744a3f89.jpg" alt="Chameleon 2">
+                <div class="image-name">chameleon_changing_c_744a3f89.jpg</div>
+            </div>
+            <div class="image-card">
+                <img src="attached_assets/stock_images/chameleon_changing_c_761e6962.jpg" alt="Chameleon 3">
+                <div class="image-name">chameleon_changing_c_761e6962.jpg</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>🐙 Octopuses - Intelligent Camouflage</h2>
+        <div class="grid">
+            <div class="image-card">
+                <img src="attached_assets/stock_images/octopus_camouflage_u_c3291d1b.jpg" alt="Octopus 1">
+                <div class="image-name">octopus_camouflage_u_c3291d1b.jpg</div>
+            </div>
+            <div class="image-card">
+                <img src="attached_assets/stock_images/octopus_camouflage_u_032b33bc.jpg" alt="Octopus 2">
+                <div class="image-name">octopus_camouflage_u_032b33bc.jpg</div>
+            </div>
+            <div class="image-card">
+                <img src="attached_assets/stock_images/octopus_camouflage_u_e249e7d1.jpg" alt="Octopus 3">
+                <div class="image-name">octopus_camouflage_u_e249e7d1.jpg</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>🦊 Arctic Foxes - Seasonal Adaptation</h2>
+        <div class="grid">
+            <div class="image-card">
+                <img src="attached_assets/stock_images/arctic_fox_winter_wh_e53617a0.jpg" alt="Arctic Fox 1">
+                <div class="image-name">arctic_fox_winter_wh_e53617a0.jpg</div>
+            </div>
+            <div class="image-card">
+                <img src="attached_assets/stock_images/arctic_fox_winter_wh_2ef11a3d.jpg" alt="Arctic Fox 2">
+                <div class="image-name">arctic_fox_winter_wh_2ef11a3d.jpg</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>🦑 Cuttlefish - Pattern Changing Masters</h2>
+        <div class="grid">
+            <div class="image-card">
+                <img src="attached_assets/stock_images/cuttlefish_camouflag_890799bf.jpg" alt="Cuttlefish 1">
+                <div class="image-name">cuttlefish_camouflag_890799bf.jpg</div>
+            </div>
+            <div class="image-card">
+                <img src="attached_assets/stock_images/cuttlefish_camouflag_774f53ef.jpg" alt="Cuttlefish 2">
+                <div class="image-name">cuttlefish_camouflag_774f53ef.jpg</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 60px; padding: 20px; background: #1a1a1a; border-radius: 8px;">
+        <p style="color: #00d9ff; font-size: 18px;">Pick your favorites and let me know which ones you'd like to use!</p>
+        <p style="color: #888;">Consider: Which for Hero section? Which for Features section?</p>
+    </div>
+</body>
+</html>
