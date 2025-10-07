@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Compass, Heart, Scale } from "lucide-react";
-import cuttlefishImage from "@assets/stock_images/cuttlefish_camouflag_890799bf.jpg";
+import cuttlefishImage from "@assets/stock_images/camouflaged_insect_b_eef38471.jpg";
 
 export default function RosieDetails() {
   const industries = [
