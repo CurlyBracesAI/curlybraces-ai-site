@@ -32,13 +32,16 @@ export default function AgenticWorkflows() {
   return (
     <section id="current-agents" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="lg:ml-auto lg:max-w-2xl mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 max-w-md" data-testid="text-workflows-title">
-            Current Agentic Workflows
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-md" data-testid="text-workflows-subtitle">
-            Each Rosie Agent represents a specialized automation built and running in production:
-          </p>
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12">
+          <div></div>
+          <div className="mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 max-w-md" data-testid="text-workflows-title">
+              Current Agentic Workflows
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-md" data-testid="text-workflows-subtitle">
+              Each Rosie Agent represents a specialized automation built and running in production:
+            </p>
+          </div>
         </div>
 
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch flex flex-col gap-8 mb-8">
@@ -64,10 +67,13 @@ export default function AgenticWorkflows() {
           </div>
         </div>
 
-        <p className="text-muted-foreground leading-relaxed max-w-md lg:ml-auto lg:max-w-2xl" data-testid="text-workflows-footer">
-          We continue to expand Rosie's agent library and invite partners to join our{" "}
-          <strong className="text-foreground">beta program</strong> for custom domain-specific builds.
-        </p>
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12">
+          <div></div>
+          <p className="text-muted-foreground leading-relaxed max-w-md" data-testid="text-workflows-footer">
+            We continue to expand Rosie's agent library and invite partners to join our{" "}
+            <strong className="text-foreground">beta program</strong> for custom domain-specific builds.
+          </p>
+        </div>
       </div>
     </section>
   );
