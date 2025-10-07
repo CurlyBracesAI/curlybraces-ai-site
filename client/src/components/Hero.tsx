@@ -2,7 +2,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import NeuralBackground from "./NeuralBackground";
-import brainImage from "@assets/background1_1759787585993.jpg";
+import arcticFoxImage from "@assets/stock_images/arctic_fox_winter_wh_2ef11a3d.jpg";
 
 export default function Hero() {
   const handleGetStarted = () => {
@@ -56,7 +56,7 @@ export default function Hero() {
             
             <div className="absolute left-full top-[calc(3rem+1.5rem)] bottom-0 w-[500px] pointer-events-none z-0 hidden lg:block ml-12">
               <img 
-                src={brainImage} 
+                src={arcticFoxImage} 
                 alt="" 
                 className="w-full h-full opacity-50 object-cover"
               />

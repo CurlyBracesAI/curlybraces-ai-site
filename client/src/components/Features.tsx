@@ -1,6 +1,6 @@
 import { Zap, Database, Target, Sparkles } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import sphereImage from "@assets/background_1759787586001.jpg";
+import cuttlefishImage from "@assets/stock_images/cuttlefish_camouflag_774f53ef.jpg";
 
 export default function Features() {
   const features = [
@@ -33,7 +33,7 @@ export default function Features() {
           <div className="lg:w-1/2 flex items-stretch">
             <div className="w-full relative flex items-stretch">
               <img 
-                src={sphereImage} 
+                src={cuttlefishImage} 
                 alt="" 
                 className="w-full h-auto opacity-60 object-contain"
               />
