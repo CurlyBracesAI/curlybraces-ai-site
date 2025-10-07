@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import octopusImage from "@assets/stock_images/octopus_camouflage_u_032b33bc.jpg";
 
 export default function AgenticWorkflows() {
   const agents = [
@@ -30,33 +31,45 @@ export default function AgenticWorkflows() {
 
   return (
     <section id="current-agents" className="py-24 px-6">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-workflows-title">
-            Current Agentic Workflows
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-workflows-subtitle">
-            Each Rosie Agent represents a specialized automation built and running in production:
-          </p>
-        </div>
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-stretch gap-12">
+          <div className="lg:w-1/2 flex items-stretch">
+            <div className="w-full relative flex items-stretch">
+              <img 
+                src={octopusImage} 
+                alt="" 
+                className="w-full h-auto object-contain"
+              />
+            </div>
+          </div>
 
-        <div className="space-y-6 mb-12">
-          {agents.map((agent, index) => (
-            <Card key={index} className="hover-elevate transition-all duration-200" data-testid={`card-agent-${index}`}>
-              <CardContent className="p-6">
-                <p className="leading-relaxed" data-testid={`text-agent-${index}`}>
-                  <strong className="text-foreground">{agent.name}</strong>{" "}
-                  <span className="text-muted-foreground">{agent.description}</span>
-                </p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+          <div className="lg:w-1/2">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-workflows-title">
+              Current Agentic Workflows
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8" data-testid="text-workflows-subtitle">
+              Each Rosie Agent represents a specialized automation built and running in production:
+            </p>
 
-        <p className="text-center text-muted-foreground leading-relaxed" data-testid="text-workflows-footer">
-          We continue to expand Rosie's agent library and invite partners to join our{" "}
-          <strong className="text-foreground">beta program</strong> for custom domain-specific builds.
-        </p>
+            <div className="space-y-6 mb-8">
+              {agents.map((agent, index) => (
+                <Card key={index} className="hover-elevate transition-all duration-200" data-testid={`card-agent-${index}`}>
+                  <CardContent className="p-6">
+                    <p className="leading-relaxed" data-testid={`text-agent-${index}`}>
+                      <strong className="text-foreground">{agent.name}</strong>{" "}
+                      <span className="text-muted-foreground">{agent.description}</span>
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <p className="text-muted-foreground leading-relaxed" data-testid="text-workflows-footer">
+              We continue to expand Rosie's agent library and invite partners to join our{" "}
+              <strong className="text-foreground">beta program</strong> for custom domain-specific builds.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
