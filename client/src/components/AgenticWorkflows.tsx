@@ -36,7 +36,7 @@ export default function AgenticWorkflows() {
           <div></div>
           <div className="mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 max-w-md" data-testid="text-workflows-title">
-              Current Agentic Workflows
+              Our Current Agentic Workflows
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-md" data-testid="text-workflows-subtitle">
               Each Rosie Agent represents a specialized automation built and running in production:
