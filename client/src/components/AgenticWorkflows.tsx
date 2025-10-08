@@ -44,7 +44,7 @@ export default function AgenticWorkflows() {
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch flex flex-col gap-8 mb-8">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch flex flex-col gap-12 mb-4">
           <div className="flex items-stretch">
             <img 
               src={snakeImage} 
@@ -67,7 +67,7 @@ export default function AgenticWorkflows() {
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-2 lg:gap-2">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12">
           <div></div>
           <p className="text-muted-foreground leading-relaxed max-w-md" data-testid="text-workflows-footer">
             We continue to expand Rosie's agent library and invite partners to join our{" "}
