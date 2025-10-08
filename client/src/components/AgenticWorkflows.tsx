@@ -44,7 +44,7 @@ export default function AgenticWorkflows() {
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch flex flex-col gap-12 mb-4">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch flex flex-col gap-12">
           <div className="flex items-stretch">
             <img 
               src={snakeImage} 
@@ -53,26 +53,25 @@ export default function AgenticWorkflows() {
             />
           </div>
 
-          <div className="space-y-6">
-            {agents.map((agent, index) => (
-              <Card key={index} className="hover-elevate transition-all duration-200" data-testid={`card-agent-${index}`}>
-                <CardContent className="p-6">
-                  <p className="leading-relaxed" data-testid={`text-agent-${index}`}>
-                    <strong className="text-foreground">{agent.name}</strong>{" "}
-                    <span className="text-muted-foreground">{agent.description}</span>
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+          <div className="flex flex-col">
+            <div className="space-y-6 mb-6">
+              {agents.map((agent, index) => (
+                <Card key={index} className="hover-elevate transition-all duration-200" data-testid={`card-agent-${index}`}>
+                  <CardContent className="p-6">
+                    <p className="leading-relaxed" data-testid={`text-agent-${index}`}>
+                      <strong className="text-foreground">{agent.name}</strong>{" "}
+                      <span className="text-muted-foreground">{agent.description}</span>
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
 
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12">
-          <div></div>
-          <p className="text-muted-foreground leading-relaxed max-w-md" data-testid="text-workflows-footer">
-            We continue to expand Rosie's agent library and invite partners to join our{" "}
-            <strong className="text-foreground">beta program</strong> for custom domain-specific builds.
-          </p>
+            <p className="text-muted-foreground leading-relaxed max-w-md" data-testid="text-workflows-footer">
+              We continue to expand Rosie's agent library and invite partners to join our{" "}
+              <strong className="text-foreground">beta program</strong> for custom domain-specific builds.
+            </p>
+          </div>
         </div>
       </div>
     </section>
