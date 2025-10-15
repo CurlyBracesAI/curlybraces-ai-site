@@ -4,29 +4,29 @@ import snakeImage from "@assets/stock_images/snake_vertical_portr_38647f22.jpg";
 export default function AgenticWorkflows() {
   const agents = [
     {
-      name: "Agent A — Client Proposal Engine:",
-      description: "Creates structured, branded proposals instantly.",
+      name: "Agent A — Client Report/Proposal Engine:",
+      description: "Creates in-depth structured, branded proposals instantly.",
     },
     {
-      name: "Agent B — Client & Partner Tours:",
-      description: "Automates scheduling and introductions.",
+      name: "Agent B — Client & Partner Introductions/Tours:",
+      description: "Automates multiple scheduling and introductions.",
     },
     {
-      name: "Agent C — Daily Triage Reports:",
-      description: "Summarizes activity and performance updates.",
+      name: "Agent C — Daily In-house Triage Reports:",
+      description: "Summarizes project activity, planning and performance updates.",
     },
     {
-      name: "Agent D — Partner Updates:",
-      description: "Drafts personalized monthly outreach emails.",
+      name: "Agent D — Inventory Updates:",
+      description: "Provides analysis and intelegent predictions for short and long-term inventory.",
     },
     {
-      name: "Agent E — Content Sync:",
+      name: "Agent E — Instant Content Sync:",
       description:
-        "Maintains cross-platform consistency for data and listings.",
+        "Maintains cross-platform consistency of client data and online listings.",
     },
     {
       name: "Agent F — Market Finder:",
-      description: "Scans public and private data for new opportunities.",
+      description: "Scans public and private data sources for new marketing/sales opportunities.",
     },
   ];
 
@@ -40,7 +40,7 @@ export default function AgenticWorkflows() {
               className="text-4xl md:text-5xl font-bold mb-6 max-w-md"
               data-testid="text-workflows-title"
             >
-              Our Current Agentic Workflows
+              Our Current Agentic Workflows (Commercial RE)
             </h2>
             <p
               className="text-lg text-muted-foreground leading-relaxed max-w-md"
