@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Brain, Cog, Database, RefreshCw, Shield, FileText, Link2, ShieldCheck, Sparkles, Eye, Lightbulb, ListChecks, Play, GraduationCap } from "lucide-react";
+import octopusImage from "@assets/stock_images/octopus_camouflage_u_e249e7d1.jpg";
 
 export default function HowItWorks() {
   const features = [
@@ -149,36 +150,47 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        <div className="mt-16 max-w-4xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-bold mb-6" data-testid="text-example-title">
-            Example: Customer Support Assistant
-          </h3>
-          <p className="text-muted-foreground mb-8" data-testid="text-example-intro">
-            A customized workflow assistant for a retail company handling a missing package:
-          </p>
-          
-          <div className="space-y-6">
-            {workflowSteps.map((step, index) => {
-              const Icon = step.icon;
-              return (
-                <div key={index} className="flex gap-4" data-testid={`item-example-step-${index}`}>
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-primary" />
+        <div className="mt-20">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch flex flex-col gap-12">
+            <div className="flex flex-col">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4" data-testid="text-example-title">
+                Example: Customer Support Assistant
+              </h3>
+              <p className="text-muted-foreground mb-8" data-testid="text-example-intro">
+                A customized workflow assistant for a retail company handling a missing package:
+              </p>
+              
+              <div className="space-y-4 flex-1">
+                {workflowSteps.map((step, index) => {
+                  const Icon = step.icon;
+                  return (
+                    <div key={index} className="flex gap-3" data-testid={`item-example-step-${index}`}>
+                      <div className="flex-shrink-0">
+                        <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                          <Icon className="w-5 h-5 text-primary" />
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-baseline gap-2 mb-1">
+                          <h4 className="text-base font-semibold text-foreground">{step.step}:</h4>
+                        </div>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          {step.description}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-baseline gap-2 mb-1">
-                      <span className="text-xs font-bold text-primary">STEP {index + 1}</span>
-                      <h4 className="text-lg font-semibold text-foreground">{step.step}</h4>
-                    </div>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {step.description}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="flex items-stretch">
+              <img 
+                src={octopusImage} 
+                alt="" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
