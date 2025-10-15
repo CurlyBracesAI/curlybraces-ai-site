@@ -31,7 +31,7 @@ export default function AgenticWorkflows() {
   ];
 
   return (
-    <section id="current-agents" className="py-12 md:py-24 px-6 bg-card/30">
+    <section id="current-agents" className="py-12 md:py-24 px-6 bg-card">
       <div className="max-w-7xl mx-auto">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12">
           <div></div>
