@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Brain, Cog, Database, RefreshCw, Shield } from "lucide-react";
+import { Brain, Cog, Database, RefreshCw, Shield, FileText, Link2, ShieldCheck, Sparkles, Eye, Lightbulb, ListChecks, Play, GraduationCap } from "lucide-react";
 
 export default function HowItWorks() {
   const features = [
@@ -32,20 +32,52 @@ export default function HowItWorks() {
 
   const customizationAspects = [
     {
+      icon: FileText,
       title: "Proprietary Data Integration",
       description: "Trained on your organization's specific documents, communications, and historical data."
     },
     {
+      icon: Link2,
       title: "Tech Stack Connection",
       description: "Integrates with your ERP, CRM, and other software systems to act across your entire ecosystem."
     },
     {
+      icon: ShieldCheck,
       title: "Goals & Guardrails",
       description: "Program the AI's objectives and set clear boundaries for auditable, secure, and compliant decisions."
     },
     {
+      icon: Sparkles,
       title: "Custom User Experience",
       description: "Streamlined interfaces make complex workflows simple for your employees to manage."
+    }
+  ];
+
+  const workflowSteps = [
+    {
+      icon: Eye,
+      step: "Perception",
+      description: "Receives an email from a customer about a missing package."
+    },
+    {
+      icon: Lightbulb,
+      step: "Reasoning",
+      description: "Analyzes the email, accesses the CRM to see customer history and order status, identifies the need to track the package."
+    },
+    {
+      icon: ListChecks,
+      step: "Planning",
+      description: "Breaks down the task: Check logistics tracking API, draft customer response, alert team if complex."
+    },
+    {
+      icon: Play,
+      step: "Execution",
+      description: "Autonomously queries the API, finds shipping information, and drafts a personalized response with the new estimated delivery date."
+    },
+    {
+      icon: GraduationCap,
+      step: "Learning",
+      description: "Reviews the process and uses the outcome to improve handling of similar cases in the future."
     }
   ];
 
@@ -94,19 +126,26 @@ export default function HowItWorks() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {customizationAspects.map((aspect, index) => (
-              <div key={index} className="flex gap-4" data-testid={`item-customization-${index}`}>
-                <div className="flex-shrink-0 w-2 h-2 rounded-full bg-primary mt-2"></div>
-                <div>
-                  <h4 className="text-lg font-semibold mb-2" data-testid={`text-customization-aspect-title-${index}`}>
-                    {aspect.title}
-                  </h4>
-                  <p className="text-muted-foreground leading-relaxed" data-testid={`text-customization-aspect-description-${index}`}>
-                    {aspect.description}
-                  </p>
+            {customizationAspects.map((aspect, index) => {
+              const Icon = aspect.icon;
+              return (
+                <div key={index} className="flex gap-4" data-testid={`item-customization-${index}`}>
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-primary" />
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold mb-2" data-testid={`text-customization-aspect-title-${index}`}>
+                      {aspect.title}
+                    </h4>
+                    <p className="text-muted-foreground leading-relaxed" data-testid={`text-customization-aspect-description-${index}`}>
+                      {aspect.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
@@ -114,60 +153,32 @@ export default function HowItWorks() {
           <h3 className="text-2xl md:text-3xl font-bold mb-6" data-testid="text-example-title">
             Example: Customer Support Assistant
           </h3>
-          <p className="text-muted-foreground mb-6" data-testid="text-example-intro">
+          <p className="text-muted-foreground mb-8" data-testid="text-example-intro">
             A customized workflow assistant for a retail company handling a missing package:
           </p>
           
-          <div className="space-y-4">
-            <div className="flex gap-4" data-testid="item-example-step-0">
-              <div className="flex-shrink-0">
-                <div className="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold">1</div>
-              </div>
-              <div>
-                <strong className="text-foreground">Perception:</strong>{" "}
-                <span className="text-muted-foreground">Receives an email from a customer about a missing package.</span>
-              </div>
-            </div>
-            
-            <div className="flex gap-4" data-testid="item-example-step-1">
-              <div className="flex-shrink-0">
-                <div className="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold">2</div>
-              </div>
-              <div>
-                <strong className="text-foreground">Reasoning:</strong>{" "}
-                <span className="text-muted-foreground">Analyzes the email, accesses the CRM to see customer history and order status, identifies the need to track the package.</span>
-              </div>
-            </div>
-            
-            <div className="flex gap-4" data-testid="item-example-step-2">
-              <div className="flex-shrink-0">
-                <div className="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold">3</div>
-              </div>
-              <div>
-                <strong className="text-foreground">Planning:</strong>{" "}
-                <span className="text-muted-foreground">Breaks down the task: Check logistics tracking API, draft customer response, alert team if complex.</span>
-              </div>
-            </div>
-            
-            <div className="flex gap-4" data-testid="item-example-step-3">
-              <div className="flex-shrink-0">
-                <div className="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold">4</div>
-              </div>
-              <div>
-                <strong className="text-foreground">Execution:</strong>{" "}
-                <span className="text-muted-foreground">Autonomously queries the API, finds shipping information, and drafts a personalized response with the new estimated delivery date.</span>
-              </div>
-            </div>
-            
-            <div className="flex gap-4" data-testid="item-example-step-4">
-              <div className="flex-shrink-0">
-                <div className="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold">5</div>
-              </div>
-              <div>
-                <strong className="text-foreground">Learning:</strong>{" "}
-                <span className="text-muted-foreground">Reviews the process and uses the outcome to improve handling of similar cases in the future.</span>
-              </div>
-            </div>
+          <div className="space-y-6">
+            {workflowSteps.map((step, index) => {
+              const Icon = step.icon;
+              return (
+                <div key={index} className="flex gap-4" data-testid={`item-example-step-${index}`}>
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <Icon className="w-6 h-6 text-primary" />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-baseline gap-2 mb-1">
+                      <span className="text-xs font-bold text-primary">STEP {index + 1}</span>
+                      <h4 className="text-lg font-semibold text-foreground">{step.step}</h4>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
