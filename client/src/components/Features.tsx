@@ -53,7 +53,7 @@ export default function Features() {
                 It learns your workflows, mirrors your tone, and works seamlessly across your tools, producing clean, consistent, on-brand results at any scale.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed text-left">
-                Whether you're managing hundreds of client proposals, reviewing partner data, or generating daily operations reports, Rosie turns hours of manual effort into minutes of effortless automation.
+                Whether you're managing hundreds of client proposals, reviewing inventory data, or generating daily operations reports, Rosie turns hours of manual effort into minutes of effortless automation.
               </p>
             </div>
           </div>
