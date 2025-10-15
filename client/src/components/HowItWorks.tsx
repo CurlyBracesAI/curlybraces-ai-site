@@ -58,27 +58,27 @@ export default function HowItWorks() {
     {
       icon: Eye,
       step: "Perception",
-      description: "Receives an email from a customer about a missing package."
+      description: "Monitors project timelines, drawing software APIs, team schedules, and upcoming milestone deadlines across all active projects."
     },
     {
       icon: Lightbulb,
       step: "Reasoning",
-      description: "Analyzes the email, accesses the CRM to see customer history and order status, identifies the need to track the package."
+      description: "Analyzes which projects are on track versus behind schedule, identifies bottlenecks, and correlates team capacity with project demands."
     },
     {
       icon: ListChecks,
       step: "Planning",
-      description: "Breaks down the task: Check logistics tracking API, draft customer response, alert team if complex."
+      description: "Determines resource reallocation needs, prioritizes critical deliverables, and structures weekly report for staff and management stakeholders."
     },
     {
       icon: Play,
       step: "Execution",
-      description: "Autonomously queries the API, finds shipping information, and drafts a personalized response with the new estimated delivery date."
+      description: "Generates detailed triage report with project status updates, deadline alerts, staffing recommendations, and executive summary for weekly meetings."
     },
     {
       icon: GraduationCap,
       step: "Learning",
-      description: "Reviews the process and uses the outcome to improve handling of similar cases in the future."
+      description: "Refines deadline predictions based on project outcomes and improves resource allocation suggestions over time."
     }
   ];
 
@@ -157,7 +157,7 @@ export default function HowItWorks() {
                 Example: Intelligent Adaptation
               </h3>
               <p className="text-muted-foreground mb-8" data-testid="text-example-intro">
-                A customized workflow assistant for a retail company handling a missing package:
+                An architectural practice using an AI agent to generate weekly triage reports for staff and management:
               </p>
               
               <div className="space-y-4 flex-1">
