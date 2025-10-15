@@ -154,7 +154,7 @@ export default function HowItWorks() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch flex flex-col gap-12">
             <div className="flex flex-col">
               <h3 className="text-2xl md:text-3xl font-bold mb-4" data-testid="text-example-title">
-                Example: Customer Support Assistant
+                Example: Intelligent Adaptation
               </h3>
               <p className="text-muted-foreground mb-8" data-testid="text-example-intro">
                 A customized workflow assistant for a retail company handling a missing package:
