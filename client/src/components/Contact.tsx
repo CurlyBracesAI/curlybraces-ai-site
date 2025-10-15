@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-6">
+    <section id="contact" className="py-12 md:py-24 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-contact-title">

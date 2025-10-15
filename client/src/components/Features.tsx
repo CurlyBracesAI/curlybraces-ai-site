@@ -27,7 +27,7 @@ export default function Features() {
   ];
 
   return (
-    <section id="features" className="relative py-24 px-6 overflow-hidden">
+    <section id="features" className="relative py-12 md:py-24 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-stretch gap-12 mb-16">
           <div className="lg:w-1/2 flex items-stretch">

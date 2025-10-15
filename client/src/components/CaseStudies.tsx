@@ -25,7 +25,7 @@ export default function CaseStudies() {
   ];
 
   return (
-    <section id="case-studies" className="py-24 px-6 bg-card/30">
+    <section id="case-studies" className="py-12 md:py-24 px-6 bg-card/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-case-studies-title">

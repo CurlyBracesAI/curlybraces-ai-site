@@ -19,9 +19,9 @@ export default function Hero() {
     <section className="relative min-h-[85vh] flex items-center overflow-hidden">
       <NeuralBackground />
       
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 w-full flex items-center">
-        <div className="lg:w-1/2 lg:pr-12 relative">
-          <div className="relative">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-12 md:py-24 w-full flex items-center">
+        <div className="w-full">
+          <div className="lg:w-1/2 lg:pr-12 relative">
             <h1 className="font-bold leading-tight mb-10 text-left" data-testid="text-hero-title">
               <span className="text-2xl md:text-3xl lg:text-4xl text-primary block mb-6">{"{"}curlybraces.ai{"}"}</span>
               <span className="text-4xl md:text-5xl lg:text-6xl text-foreground block">AI Automation that adapts to your business</span>
@@ -33,7 +33,7 @@ export default function Hero() {
               From detailed client proposals to end-to-end operations, Rosie automates the repetitive, the manual, and the mundane, freeing your team to focus on strategy, creativity, and growth.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-start gap-4">
+            <div className="flex flex-col sm:flex-row items-start gap-4 mb-8 lg:mb-0">
               <Button
                 size="lg"
                 className="text-base px-8"
@@ -61,6 +61,14 @@ export default function Hero() {
                 className="w-full h-full object-cover"
               />
             </div>
+          </div>
+          
+          <div className="lg:hidden w-full mt-8">
+            <img 
+              src={arcticFoxImage} 
+              alt="" 
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
       </div>
