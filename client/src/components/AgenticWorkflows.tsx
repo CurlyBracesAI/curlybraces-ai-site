@@ -76,7 +76,7 @@ export default function AgenticWorkflows() {
                 data-testid="text-workflows-subtitle"
               >
                 Each Rosie Agent represents a specialized AI automation build that
-                is running and in production (presently for RE, to be adapted to your requiremnts):
+                is running and in production (presently for RE, we adapt to your specified industry requirements):
               </p>
             </div>
 
