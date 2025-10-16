@@ -9,28 +9,32 @@ export default function RosieDetails() {
       title: "Real Estate",
       description: "Generates and sends curated property proposals automatically",
       iconBg: "bg-gradient-to-br from-blue-400 to-cyan-500",
-      iconColor: "text-white"
+      iconColor: "text-white",
+      cardBg: "bg-gradient-to-br from-blue-400/5 to-cyan-500/5"
     },
     {
       icon: Compass,
       title: "Architecture & Engineering",
       description: "Drafts tailored RFP responses and zoning memos",
       iconBg: "bg-gradient-to-br from-orange-400 to-amber-500",
-      iconColor: "text-white"
+      iconColor: "text-white",
+      cardBg: "bg-gradient-to-br from-orange-400/5 to-amber-500/5"
     },
     {
       icon: Heart,
       title: "Healthcare & Wellness",
       description: "Handles intake, scheduling, and client communications",
       iconBg: "bg-gradient-to-br from-rose-400 to-pink-500",
-      iconColor: "text-white"
+      iconColor: "text-white",
+      cardBg: "bg-gradient-to-br from-rose-400/5 to-pink-500/5"
     },
     {
       icon: Scale,
       title: "Legal & Finance",
       description: "Produces compliant, consistent documentation at scale",
       iconBg: "bg-gradient-to-br from-violet-400 to-purple-500",
-      iconColor: "text-white"
+      iconColor: "text-white",
+      cardBg: "bg-gradient-to-br from-violet-400/5 to-purple-500/5"
     }
   ];
 
@@ -50,7 +54,7 @@ export default function RosieDetails() {
               {industries.map((industry, index) => {
                 const Icon = industry.icon;
                 return (
-                  <Card key={index} className="hover-elevate transition-all duration-200" data-testid={`card-industry-${index}`}>
+                  <Card key={index} className={`hover-elevate transition-all duration-200 ${industry.cardBg}`} data-testid={`card-industry-${index}`}>
                     <CardContent className="p-6">
                       <div className={`w-12 h-12 rounded-lg ${industry.iconBg} flex items-center justify-center mb-4`}>
                         <Icon className={`w-6 h-6 ${industry.iconColor}`} />

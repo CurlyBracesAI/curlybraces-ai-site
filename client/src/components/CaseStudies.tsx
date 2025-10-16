@@ -10,7 +10,8 @@ export default function CaseStudies() {
       description: "Automated client proposal generation for a firm sending 500+ property proposals monthly, reducing preparation time from 2 hours to 5 minutes per proposal.",
       tags: ["Proposal Automation", "CRM Integration"],
       iconBg: "bg-gradient-to-br from-blue-400 to-cyan-500",
-      iconColor: "text-white"
+      iconColor: "text-white",
+      cardBg: "bg-gradient-to-br from-blue-400/5 to-cyan-500/5"
     },
     {
       icon: Briefcase,
@@ -18,7 +19,8 @@ export default function CaseStudies() {
       description: "Streamlined defendant demand letter creation across multiple cases, enabling attorneys to handle 3x more cases with consistent, compliant documentation.",
       tags: ["Document Generation", "Compliance"],
       iconBg: "bg-gradient-to-br from-violet-400 to-purple-500",
-      iconColor: "text-white"
+      iconColor: "text-white",
+      cardBg: "bg-gradient-to-br from-violet-400/5 to-purple-500/5"
     },
     {
       icon: Heart,
@@ -26,7 +28,8 @@ export default function CaseStudies() {
       description: "Automated patient intake form processing and data entry, eliminating 20+ hours of manual work per week and improving data accuracy by 95%.",
       tags: ["Data Processing", "Healthcare"],
       iconBg: "bg-gradient-to-br from-rose-400 to-pink-500",
-      iconColor: "text-white"
+      iconColor: "text-white",
+      cardBg: "bg-gradient-to-br from-rose-400/5 to-pink-500/5"
     }
   ];
 
@@ -46,7 +49,7 @@ export default function CaseStudies() {
           {caseStudies.map((study, index) => {
             const Icon = study.icon;
             return (
-              <Card key={index} className="hover-elevate transition-all duration-200" data-testid={`card-case-study-${index}`}>
+              <Card key={index} className={`hover-elevate transition-all duration-200 ${study.cardBg}`} data-testid={`card-case-study-${index}`}>
                 <CardHeader>
                   <div className={`w-12 h-12 rounded-lg ${study.iconBg} flex items-center justify-center mb-4`}>
                     <Icon className={`w-6 h-6 ${study.iconColor}`} />

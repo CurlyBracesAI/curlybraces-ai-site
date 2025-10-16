@@ -9,28 +9,32 @@ export default function Features() {
       title: "Custom-trained to your business",
       description: "Fully tailored logic and language for your processes",
       iconBg: "bg-gradient-to-br from-violet-500 to-purple-600",
-      iconColor: "text-white"
+      iconColor: "text-white",
+      cardBg: "bg-gradient-to-br from-violet-500/5 to-purple-600/5"
     },
     {
       icon: Zap,
       title: "Runs at any scale",
       description: "From one to one thousand automations per day",
       iconBg: "bg-gradient-to-br from-amber-400 to-orange-500",
-      iconColor: "text-white"
+      iconColor: "text-white",
+      cardBg: "bg-gradient-to-br from-amber-400/5 to-orange-500/5"
     },
     {
       icon: Target,
       title: "Delivers human-grade quality",
       description: "Context-aware, detail-perfect, and ready for delivery",
       iconBg: "bg-gradient-to-br from-emerald-400 to-teal-500",
-      iconColor: "text-white"
+      iconColor: "text-white",
+      cardBg: "bg-gradient-to-br from-emerald-400/5 to-teal-500/5"
     },
     {
       icon: Database,
       title: "Integrates seamlessly",
       description: "Built to sync with your CRM, files, and communications stack",
       iconBg: "bg-gradient-to-br from-cyan-400 to-blue-500",
-      iconColor: "text-white"
+      iconColor: "text-white",
+      cardBg: "bg-gradient-to-br from-cyan-400/5 to-blue-500/5"
     }
   ];
 
@@ -75,7 +79,7 @@ export default function Features() {
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <Card key={index} className="hover-elevate transition-transform duration-200" data-testid={`card-feature-${index}`}>
+              <Card key={index} className={`hover-elevate transition-transform duration-200 ${feature.cardBg}`} data-testid={`card-feature-${index}`}>
                 <CardContent className="p-8">
                   <div className={`w-12 h-12 rounded-lg ${feature.iconBg} flex items-center justify-center mb-6`}>
                     <Icon className={`w-6 h-6 ${feature.iconColor}`} />
