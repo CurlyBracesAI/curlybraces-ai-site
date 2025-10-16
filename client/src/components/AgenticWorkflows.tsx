@@ -37,7 +37,7 @@ export default function AgenticWorkflows() {
           <div></div>
           <div className="mb-12">
             <h2
-              className="text-4xl md:text-5xl font-bold mb-6 max-w-md"
+              className="text-4xl md:text-5xl font-bold mb-6 max-w-2xl"
               data-testid="text-workflows-title"
             >
               Our Current Agentic<br />Workflows (Commercial RE)
