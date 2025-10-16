@@ -40,7 +40,7 @@ export default function AgenticWorkflows() {
               className="text-4xl md:text-5xl font-bold mb-6 max-w-md"
               data-testid="text-workflows-title"
             >
-              Our Current Agentic Workflows<br />(Commercial RE)
+              Our Current Agentic<br />Workflows (Commercial RE)
             </h2>
             <p
               className="text-lg text-muted-foreground leading-relaxed max-w-md"
