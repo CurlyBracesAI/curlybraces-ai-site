@@ -52,12 +52,12 @@ export default function AgenticWorkflows() {
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch flex flex-col gap-12">
-          <div className="flex items-stretch min-h-[600px]">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 flex flex-col gap-12">
+          <div className="relative min-h-[800px] lg:min-h-full">
             <img
               src={snakeImage}
               alt=""
-              className="w-full h-full object-cover object-top"
+              className="absolute inset-0 w-full h-full object-cover object-[50%_20%]"
             />
           </div>
 
