@@ -36,7 +36,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-start gap-4">
               <Button
                 size="lg"
-                className="text-base px-8"
+                className="text-base px-8 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white border-0 no-default-hover-elevate"
                 onClick={handleGetStarted}
                 data-testid="button-hero-cta"
               >
@@ -46,7 +46,7 @@ export default function Hero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="text-base px-8 bg-background/50 backdrop-blur-sm"
+                className="text-base px-8 bg-gradient-to-r from-violet-500/10 to-purple-500/10 border-violet-500/50 text-foreground hover:border-violet-500 backdrop-blur-sm"
                 onClick={handleLearnMore}
                 data-testid="button-hero-secondary"
               >

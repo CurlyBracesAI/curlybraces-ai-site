@@ -44,8 +44,8 @@ export default function Navigation() {
               </button>
             ))}
             <Button
-              variant="default"
               size="sm"
+              className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white border-0 no-default-hover-elevate"
               onClick={() => handleNavClick("#contact")}
               data-testid="button-get-started"
             >
@@ -79,8 +79,7 @@ export default function Navigation() {
               </button>
             ))}
             <Button
-              variant="default"
-              className="w-full"
+              className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white border-0 no-default-hover-elevate"
               onClick={() => handleNavClick("#contact")}
               data-testid="button-mobile-get-started"
             >

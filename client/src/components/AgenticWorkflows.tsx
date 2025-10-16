@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import snakeImage from "@assets/stock_images/snake_vertical_portr_38647f22.jpg";
 
 export default function AgenticWorkflows() {
@@ -6,27 +7,39 @@ export default function AgenticWorkflows() {
     {
       name: "Agent A — Client Report/Proposal Engine:",
       description: "Creates in-depth structured, branded proposals instantly.",
+      badge: "Active",
+      badgeColor: "bg-emerald-500 text-white"
     },
     {
       name: "Agent B — Client & Partner Introductions/Tours:",
       description: "Automates multiple scheduling and introductions.",
+      badge: "Active",
+      badgeColor: "bg-blue-500 text-white"
     },
     {
       name: "Agent C — Daily In-house Triage Reports:",
       description: "Summarizes project activity, planning and performance updates.",
+      badge: "Active",
+      badgeColor: "bg-violet-500 text-white"
     },
     {
       name: "Agent D — Inventory Updates:",
       description: "Provides analysis and intelegent predictions for short and long-term inventory.",
+      badge: "Active",
+      badgeColor: "bg-orange-500 text-white"
     },
     {
       name: "Agent E — Instant Content Sync:",
       description:
         "Maintains cross-platform consistency of client data and online listings.",
+      badge: "Active",
+      badgeColor: "bg-pink-500 text-white"
     },
     {
       name: "Agent F — Market Finder:",
       description: "Scans public and private data sources for new marketing/sales opportunities.",
+      badge: "Active",
+      badgeColor: "bg-amber-500 text-white"
     },
   ];
 
@@ -69,15 +82,23 @@ export default function AgenticWorkflows() {
                   data-testid={`card-agent-${index}`}
                 >
                   <CardContent className="p-6">
-                    <p
-                      className="leading-relaxed"
-                      data-testid={`text-agent-${index}`}
-                    >
-                      <strong className="text-foreground">{agent.name}</strong>{" "}
-                      <span className="text-muted-foreground">
-                        {agent.description}
-                      </span>
-                    </p>
+                    <div className="flex items-start gap-3">
+                      <Badge 
+                        className={`${agent.badgeColor} shrink-0 no-default-hover-elevate no-default-active-elevate`}
+                        data-testid={`badge-agent-${index}`}
+                      >
+                        {agent.badge}
+                      </Badge>
+                      <p
+                        className="leading-relaxed"
+                        data-testid={`text-agent-${index}`}
+                      >
+                        <strong className="text-foreground">{agent.name}</strong>{" "}
+                        <span className="text-muted-foreground">
+                          {agent.description}
+                        </span>
+                      </p>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
