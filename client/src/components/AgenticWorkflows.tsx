@@ -72,11 +72,11 @@ export default function AgenticWorkflows() {
                 Our Current Agentic<br />Workflows (Office RE)
               </h2>
               <p
-                className="text-lg text-muted-foreground leading-relaxed max-w-md mb-12"
+                className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-12"
                 data-testid="text-workflows-subtitle"
               >
                 Each Rosie Agent represents a specialized AI automation build that
-                is running and in production:
+                is running and in production (presently for RE, to be adapted to your requiremnts):
               </p>
             </div>
 
