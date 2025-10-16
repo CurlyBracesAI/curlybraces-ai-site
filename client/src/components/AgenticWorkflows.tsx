@@ -33,23 +33,21 @@ export default function AgenticWorkflows() {
   return (
     <section id="current-agents" className="py-12 md:py-24 px-6 bg-card">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-12 lg:mb-0">
-          <h2
-            className="text-4xl md:text-5xl font-bold mb-6 max-w-2xl"
-            data-testid="text-workflows-title"
-          >
-            Our Current Agentic<br />Workflows (Office RE)
-          </h2>
-          <p
-            className="text-lg text-muted-foreground leading-relaxed max-w-md mb-12 lg:mb-0"
-            data-testid="text-workflows-subtitle"
-          >
-            Each Rosie Agent represents a specialized AI automation build that
-            is running and in production:
-          </p>
-        </div>
+        <h2
+          className="text-4xl md:text-5xl font-bold mb-6 max-w-2xl"
+          data-testid="text-workflows-title"
+        >
+          Our Current Agentic<br />Workflows (Office RE)
+        </h2>
+        <p
+          className="text-lg text-muted-foreground leading-relaxed max-w-md mb-12"
+          data-testid="text-workflows-subtitle"
+        >
+          Each Rosie Agent represents a specialized AI automation build that
+          is running and in production:
+        </p>
 
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start flex flex-col gap-12">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 flex flex-col gap-12">
           <div className="h-[600px] lg:h-[900px] overflow-hidden">
             <img
               src={snakeImage}
