@@ -7,27 +7,37 @@ export default function HowItWorks() {
     {
       icon: Brain,
       title: "Autonomous Decision-Making",
-      description: "Unlike older AI models that only generate content, agentic AI can reason, plan, and decide on the next best action based on context."
+      description: "Unlike older AI models that only generate content, agentic AI can reason, plan, and decide on the next best action based on context.",
+      iconBg: "bg-gradient-to-br from-pink-400 to-rose-500",
+      iconColor: "text-white"
     },
     {
       icon: Cog,
       title: "Multi-Step Problem-Solving",
-      description: "Breaks down complex, high-level goals into smaller, manageable subtasks and orchestrates the entire process from start to finish."
+      description: "Breaks down complex, high-level goals into smaller, manageable subtasks and orchestrates the entire process from start to finish.",
+      iconBg: "bg-gradient-to-br from-blue-400 to-indigo-500",
+      iconColor: "text-white"
     },
     {
       icon: Database,
       title: "Tool Use & External Integration",
-      description: "Accesses and uses external tools like APIs, databases, or web browsers to gather real-time data and execute specific actions."
+      description: "Accesses and uses external tools like APIs, databases, or web browsers to gather real-time data and execute specific actions.",
+      iconBg: "bg-gradient-to-br from-teal-400 to-cyan-500",
+      iconColor: "text-white"
     },
     {
       icon: RefreshCw,
       title: "Memory & Continuous Learning",
-      description: "Retains context from past interactions and reflects on outcomes to refine future strategies and execution."
+      description: "Retains context from past interactions and reflects on outcomes to refine future strategies and execution.",
+      iconBg: "bg-gradient-to-br from-violet-400 to-purple-500",
+      iconColor: "text-white"
     },
     {
       icon: Shield,
       title: "Human-in-the-Loop Oversight",
-      description: "Designed to require human review and approval for high-stakes decisions or ethical judgments before proceeding."
+      description: "Designed to require human review and approval for high-stakes decisions or ethical judgments before proceeding.",
+      iconBg: "bg-gradient-to-br from-emerald-400 to-green-500",
+      iconColor: "text-white"
     }
   ];
 
@@ -35,22 +45,30 @@ export default function HowItWorks() {
     {
       icon: FileText,
       title: "Proprietary Data Integration",
-      description: "Trained on your organization's specific documents, communications, and historical data."
+      description: "Trained on your organization's specific documents, communications, and historical data.",
+      iconBg: "bg-gradient-to-br from-orange-400 to-red-500",
+      iconColor: "text-white"
     },
     {
       icon: Link2,
       title: "Tech Stack Connection",
-      description: "Integrates with your ERP, CRM, and other software systems to act across your entire ecosystem."
+      description: "Integrates with your ERP, CRM, and other software systems to act across your entire ecosystem.",
+      iconBg: "bg-gradient-to-br from-cyan-400 to-blue-500",
+      iconColor: "text-white"
     },
     {
       icon: ShieldCheck,
       title: "Goals & Guardrails",
-      description: "Program the AI's objectives and set clear boundaries for auditable, secure, and compliant decisions."
+      description: "Program the AI's objectives and set clear boundaries for auditable, secure, and compliant decisions.",
+      iconBg: "bg-gradient-to-br from-green-400 to-emerald-500",
+      iconColor: "text-white"
     },
     {
       icon: Sparkles,
       title: "Custom User Experience",
-      description: "Streamlined interfaces make complex workflows simple for your employees to manage."
+      description: "Streamlined interfaces make complex workflows simple for your employees to manage.",
+      iconBg: "bg-gradient-to-br from-fuchsia-400 to-pink-500",
+      iconColor: "text-white"
     }
   ];
 
@@ -58,27 +76,37 @@ export default function HowItWorks() {
     {
       icon: Eye,
       step: "Perception",
-      description: "Monitors project timelines, drawing software progress (Schematic Design, Design Development, Construction Documents & Administration), team schedules, and upcoming deadlines."
+      description: "Monitors project timelines, drawing software progress (Schematic Design, Design Development, Construction Documents & Administration), team schedules, and upcoming deadlines.",
+      iconBg: "bg-gradient-to-br from-blue-400 to-cyan-500",
+      iconColor: "text-white"
     },
     {
       icon: Lightbulb,
       step: "Reasoning",
-      description: "Analyzes which projects are on track versus behind schedule, identifies bottlenecks, and correlates team capacity with project demands."
+      description: "Analyzes which projects are on track versus behind schedule, identifies bottlenecks, and correlates team capacity with project demands.",
+      iconBg: "bg-gradient-to-br from-amber-400 to-yellow-500",
+      iconColor: "text-white"
     },
     {
       icon: ListChecks,
       step: "Planning",
-      description: "Determines resource reallocation needs, prioritizes critical deliverables, and structures weekly report for staff and management stakeholders."
+      description: "Determines resource reallocation needs, prioritizes critical deliverables, and structures weekly report for staff and management stakeholders.",
+      iconBg: "bg-gradient-to-br from-violet-400 to-purple-500",
+      iconColor: "text-white"
     },
     {
       icon: Play,
       step: "Execution",
-      description: "Generates detailed triage report with project status updates, deadline alerts, staffing recommendations, and executive summary for weekly meetings."
+      description: "Generates detailed triage report with project status updates, deadline alerts, staffing recommendations, and executive summary for weekly meetings.",
+      iconBg: "bg-gradient-to-br from-emerald-400 to-green-500",
+      iconColor: "text-white"
     },
     {
       icon: GraduationCap,
       step: "Learning",
-      description: "Refines deadline predictions based on project outcomes and improves resource allocation suggestions over time."
+      description: "Refines deadline predictions based on project outcomes and improves resource allocation suggestions over time.",
+      iconBg: "bg-gradient-to-br from-pink-400 to-rose-500",
+      iconColor: "text-white"
     }
   ];
 
@@ -102,8 +130,8 @@ export default function HowItWorks() {
               return (
                 <Card key={index} className="hover-elevate transition-all duration-200" data-testid={`card-feature-${index}`}>
                   <CardContent className="p-6">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                      <Icon className="w-6 h-6 text-primary" />
+                    <div className={`w-12 h-12 rounded-lg ${feature.iconBg} flex items-center justify-center mb-4`}>
+                      <Icon className={`w-6 h-6 ${feature.iconColor}`} />
                     </div>
                     <h4 className="text-lg font-semibold mb-3" data-testid={`text-feature-title-${index}`}>
                       {feature.title}
@@ -132,8 +160,8 @@ export default function HowItWorks() {
               return (
                 <div key={index} className="flex gap-4" data-testid={`item-customization-${index}`}>
                   <div className="flex-shrink-0">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-primary" />
+                    <div className={`w-10 h-10 rounded-lg ${aspect.iconBg} flex items-center justify-center`}>
+                      <Icon className={`w-5 h-5 ${aspect.iconColor}`} />
                     </div>
                   </div>
                   <div>
@@ -166,8 +194,8 @@ export default function HowItWorks() {
                   return (
                     <div key={index} className="flex gap-3" data-testid={`item-example-step-${index}`}>
                       <div className="flex-shrink-0">
-                        <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                          <Icon className="w-5 h-5 text-primary" />
+                        <div className={`w-10 h-10 rounded-lg ${step.iconBg} flex items-center justify-center`}>
+                          <Icon className={`w-5 h-5 ${step.iconColor}`} />
                         </div>
                       </div>
                       <div className="flex-1">
