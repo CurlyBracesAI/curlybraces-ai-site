@@ -33,30 +33,34 @@ export default function AgenticWorkflows() {
   return (
     <section id="current-agents" className="py-12 md:py-24 px-6 bg-card">
       <div className="max-w-7xl mx-auto">
-        <h2
-          className="text-4xl md:text-5xl font-bold mb-6 max-w-2xl"
-          data-testid="text-workflows-title"
-        >
-          Our Current Agentic<br />Workflows (Office RE)
-        </h2>
-        <p
-          className="text-lg text-muted-foreground leading-relaxed max-w-md mb-12"
-          data-testid="text-workflows-subtitle"
-        >
-          Each Rosie Agent represents a specialized AI automation build that
-          is running and in production:
-        </p>
-
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12 flex flex-col gap-12">
-          <div className="h-[600px] lg:h-[900px] overflow-hidden">
-            <img
-              src={snakeImage}
-              alt=""
-              className="w-full h-full object-cover object-top"
-            />
+        <div className="flex flex-col lg:flex-row items-stretch gap-12">
+          <div className="lg:w-1/2 flex items-stretch">
+            <div className="w-full relative h-[600px] lg:h-auto">
+              <img
+                src={snakeImage}
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
-          <div>
+          <div className="lg:w-1/2 flex flex-col">
+            <div>
+              <h2
+                className="text-4xl md:text-5xl font-bold mb-6 max-w-2xl"
+                data-testid="text-workflows-title"
+              >
+                Our Current Agentic<br />Workflows (Office RE)
+              </h2>
+              <p
+                className="text-lg text-muted-foreground leading-relaxed max-w-md mb-12"
+                data-testid="text-workflows-subtitle"
+              >
+                Each Rosie Agent represents a specialized AI automation build that
+                is running and in production:
+              </p>
+            </div>
+
             <div className="space-y-6 mb-6">
               {agents.map((agent, index) => (
                 <Card
