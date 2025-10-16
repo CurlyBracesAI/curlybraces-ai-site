@@ -7,22 +7,30 @@ export default function RosieDetails() {
     {
       icon: Building2,
       title: "Real Estate",
-      description: "Generates and sends curated property proposals automatically"
+      description: "Generates and sends curated property proposals automatically",
+      iconBg: "bg-gradient-to-br from-blue-400 to-cyan-500",
+      iconColor: "text-white"
     },
     {
       icon: Compass,
       title: "Architecture & Engineering",
-      description: "Drafts tailored RFP responses and zoning memos"
+      description: "Drafts tailored RFP responses and zoning memos",
+      iconBg: "bg-gradient-to-br from-orange-400 to-amber-500",
+      iconColor: "text-white"
     },
     {
       icon: Heart,
       title: "Healthcare & Wellness",
-      description: "Handles intake, scheduling, and client communications"
+      description: "Handles intake, scheduling, and client communications",
+      iconBg: "bg-gradient-to-br from-rose-400 to-pink-500",
+      iconColor: "text-white"
     },
     {
       icon: Scale,
       title: "Legal & Finance",
-      description: "Produces compliant, consistent documentation at scale"
+      description: "Produces compliant, consistent documentation at scale",
+      iconBg: "bg-gradient-to-br from-violet-400 to-purple-500",
+      iconColor: "text-white"
     }
   ];
 
@@ -44,8 +52,8 @@ export default function RosieDetails() {
                 return (
                   <Card key={index} className="hover-elevate transition-all duration-200" data-testid={`card-industry-${index}`}>
                     <CardContent className="p-6">
-                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                        <Icon className="w-6 h-6 text-primary" />
+                      <div className={`w-12 h-12 rounded-lg ${industry.iconBg} flex items-center justify-center mb-4`}>
+                        <Icon className={`w-6 h-6 ${industry.iconColor}`} />
                       </div>
                       <h3 className="text-lg font-semibold mb-2" data-testid={`text-industry-title-${index}`}>
                         {industry.title}
