@@ -53,15 +53,15 @@ export default function AgenticWorkflows() {
         </div>
 
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start flex flex-col gap-12">
-          <div className="relative h-[600px] lg:h-[900px]">
+          <div className="h-[600px] lg:h-[900px] overflow-hidden">
             <img
               src={snakeImage}
               alt=""
-              className="absolute inset-0 w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-top"
             />
           </div>
 
-          <div className="flex flex-col">
+          <div>
             <div className="space-y-6 mb-6">
               {agents.map((agent, index) => (
                 <Card
