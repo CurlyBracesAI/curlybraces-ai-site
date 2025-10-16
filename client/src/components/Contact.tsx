@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ConsultationForm from "./ConsultationForm";
 
 export default function Contact() {
+  const [isConsultationOpen, setIsConsultationOpen] = useState(false);
+
   return (
     <section id="contact" className="py-12 md:py-24 px-6">
       <div className="max-w-4xl mx-auto">
@@ -36,7 +40,7 @@ export default function Contact() {
                 size="lg"
                 variant="outline"
                 className="gap-2"
-                onClick={() => console.log('Schedule consultation clicked')}
+                onClick={() => setIsConsultationOpen(true)}
                 data-testid="button-contact-schedule"
               >
                 <MessageSquare className="w-5 h-5" />
@@ -56,6 +60,11 @@ export default function Contact() {
           </CardContent>
         </Card>
       </div>
+
+      <ConsultationForm 
+        open={isConsultationOpen} 
+        onOpenChange={setIsConsultationOpen}
+      />
     </section>
   );
 }
