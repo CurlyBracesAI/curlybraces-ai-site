@@ -58,7 +58,7 @@ export default function HowItWorks() {
     {
       icon: Eye,
       step: "Perception",
-      description: "Monitors project timelines, drawing software APIs, team schedules, and upcoming milestone deadlines across all active projects."
+      description: "Monitors project timelines, drawing software progress (Schematic Design, Design Development, Construction Documents & Administration), team schedules, and upcoming deadlines."
     },
     {
       icon: Lightbulb,
