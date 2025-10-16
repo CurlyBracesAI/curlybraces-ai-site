@@ -11,16 +11,16 @@ export default function CaseStudies() {
       tags: ["Proposal Automation", "CRM Integration"],
       iconBg: "bg-gradient-to-br from-blue-400 to-cyan-500",
       iconColor: "text-white",
-      cardBg: "bg-gradient-to-br from-blue-400/5 to-cyan-500/5"
+      cardBg: "bg-gradient-to-br from-blue-400/25 to-cyan-500/25"
     },
     {
       icon: Briefcase,
       title: "Legal Practice",
       description: "Streamlined defendant demand letter creation across multiple cases, enabling attorneys to handle 3x more cases with consistent, compliant documentation.",
       tags: ["Document Generation", "Compliance"],
-      iconBg: "bg-gradient-to-br from-violet-400 to-purple-500",
+      iconBg: "bg-gradient-to-br from-violet-400/25 to-purple-500/25",
       iconColor: "text-white",
-      cardBg: "bg-gradient-to-br from-violet-400/5 to-purple-500/5"
+      cardBg: "bg-gradient-to-br from-violet-400/25 to-purple-500/25"
     },
     {
       icon: Heart,
@@ -29,7 +29,7 @@ export default function CaseStudies() {
       tags: ["Data Processing", "Healthcare"],
       iconBg: "bg-gradient-to-br from-rose-400 to-pink-500",
       iconColor: "text-white",
-      cardBg: "bg-gradient-to-br from-rose-400/5 to-pink-500/5"
+      cardBg: "bg-gradient-to-br from-rose-400/25 to-pink-500/25"
     }
   ];
 

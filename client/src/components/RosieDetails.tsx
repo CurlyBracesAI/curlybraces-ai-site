@@ -10,7 +10,7 @@ export default function RosieDetails() {
       description: "Generates and sends curated property proposals automatically",
       iconBg: "bg-gradient-to-br from-blue-400 to-cyan-500",
       iconColor: "text-white",
-      cardBg: "bg-gradient-to-br from-blue-400/5 to-cyan-500/5"
+      cardBg: "bg-gradient-to-br from-blue-400/25 to-cyan-500/25"
     },
     {
       icon: Compass,
@@ -18,7 +18,7 @@ export default function RosieDetails() {
       description: "Drafts tailored RFP responses and zoning memos",
       iconBg: "bg-gradient-to-br from-orange-400 to-amber-500",
       iconColor: "text-white",
-      cardBg: "bg-gradient-to-br from-orange-400/5 to-amber-500/5"
+      cardBg: "bg-gradient-to-br from-orange-400/25 to-amber-500/25"
     },
     {
       icon: Heart,
@@ -26,7 +26,7 @@ export default function RosieDetails() {
       description: "Handles intake, scheduling, and client communications",
       iconBg: "bg-gradient-to-br from-rose-400 to-pink-500",
       iconColor: "text-white",
-      cardBg: "bg-gradient-to-br from-rose-400/5 to-pink-500/5"
+      cardBg: "bg-gradient-to-br from-rose-400/25 to-pink-500/25"
     },
     {
       icon: Scale,
@@ -34,7 +34,7 @@ export default function RosieDetails() {
       description: "Produces compliant, consistent documentation at scale",
       iconBg: "bg-gradient-to-br from-violet-400 to-purple-500",
       iconColor: "text-white",
-      cardBg: "bg-gradient-to-br from-violet-400/5 to-purple-500/5"
+      cardBg: "bg-gradient-to-br from-violet-400/25 to-purple-500/25"
     }
   ];
 

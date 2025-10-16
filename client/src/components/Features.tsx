@@ -10,7 +10,7 @@ export default function Features() {
       description: "Fully tailored logic and language for your processes",
       iconBg: "bg-gradient-to-br from-violet-500 to-purple-600",
       iconColor: "text-white",
-      cardBg: "bg-gradient-to-br from-violet-500/5 to-purple-600/5"
+      cardBg: "bg-gradient-to-br from-violet-500/25 to-purple-600/25"
     },
     {
       icon: Zap,
@@ -18,7 +18,7 @@ export default function Features() {
       description: "From one to one thousand automations per day",
       iconBg: "bg-gradient-to-br from-amber-400 to-orange-500",
       iconColor: "text-white",
-      cardBg: "bg-gradient-to-br from-amber-400/5 to-orange-500/5"
+      cardBg: "bg-gradient-to-br from-amber-400/25 to-orange-500/25"
     },
     {
       icon: Target,
@@ -26,7 +26,7 @@ export default function Features() {
       description: "Context-aware, detail-perfect, and ready for delivery",
       iconBg: "bg-gradient-to-br from-emerald-400 to-teal-500",
       iconColor: "text-white",
-      cardBg: "bg-gradient-to-br from-emerald-400/5 to-teal-500/5"
+      cardBg: "bg-gradient-to-br from-emerald-400/25 to-teal-500/25"
     },
     {
       icon: Database,
@@ -34,7 +34,7 @@ export default function Features() {
       description: "Built to sync with your CRM, files, and communications stack",
       iconBg: "bg-gradient-to-br from-cyan-400 to-blue-500",
       iconColor: "text-white",
-      cardBg: "bg-gradient-to-br from-cyan-400/5 to-blue-500/5"
+      cardBg: "bg-gradient-to-br from-cyan-400/25 to-blue-500/25"
     }
   ];
 
