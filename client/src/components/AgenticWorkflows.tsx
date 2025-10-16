@@ -40,7 +40,7 @@ export default function AgenticWorkflows() {
               className="text-4xl md:text-5xl font-bold mb-6 max-w-2xl"
               data-testid="text-workflows-title"
             >
-              Our Current Agentic<br />Workflows (Commercial RE)
+              Our Current Agentic<br />Workflows (Office RE)
             </h2>
             <p
               className="text-lg text-muted-foreground leading-relaxed max-w-md"
@@ -53,11 +53,11 @@ export default function AgenticWorkflows() {
         </div>
 
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch flex flex-col gap-12">
-          <div className="flex items-stretch">
+          <div className="flex items-stretch min-h-[600px]">
             <img
               src={snakeImage}
               alt=""
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
             />
           </div>
 

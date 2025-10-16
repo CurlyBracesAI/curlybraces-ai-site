@@ -86,7 +86,7 @@ export default function HowItWorks() {
     <section id="how-it-works" className="py-12 md:py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center lg:text-left" data-testid="text-how-it-works-title">
-          How Agentic AI Works
+          How Rosie Agentic AI Works
         </h2>
         <p className="text-xl text-muted-foreground mb-16 text-center lg:text-left max-w-4xl" data-testid="text-how-it-works-subtitle">
           An intelligent, Agentic AI workflow assistant uses autonomous agents to perform complex, multi-step business processes with minimal human oversight. These systems are highly flexible, able to adapt and learn from real-time data and changing conditions.
