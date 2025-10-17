@@ -81,7 +81,7 @@ export default function HowItWorks() {
     {
       icon: Eye,
       step: "Perception",
-      description: "Monitors project timelines, drawing software progress (Schematic Design, Design Development, Construction Documents & Administration), team schedules, and upcoming deadlines.",
+      description: "Monitors project timelines, drawing software progress (Schematic Design, Design Development, Construction Documents / Administration), team schedules, and upcoming deadlines.",
       iconBg: "bg-gradient-to-br from-blue-400 to-cyan-500",
       iconColor: "text-white"
     },
@@ -190,7 +190,7 @@ export default function HowItWorks() {
                 Example: Intelligent Adaptation
               </h3>
               <p className="text-muted-foreground mb-8" data-testid="text-example-intro">
-                An architectural practice using Rosie AI agent to generate weekly project triage reports for staff and management meetings:
+                An architectural practice using Rosie AI agent to generate weekly project triage reports for staff and management planning meetings:
               </p>
               
               <div className="space-y-4 flex-1">
