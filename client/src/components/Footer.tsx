@@ -21,11 +21,20 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <button
-                  onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
-                  data-testid="link-footer-features"
+                  data-testid="link-footer-how-it-works"
                 >
-                  Features
+                  How It Works
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => document.getElementById('current-agents')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
+                  data-testid="link-footer-current-agents"
+                >
+                  Current Agents
                 </button>
               </li>
               <li>
@@ -35,15 +44,6 @@ export default function Footer() {
                   data-testid="link-footer-case-studies"
                 >
                   Case Studies
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
-                  data-testid="link-footer-contact"
-                >
-                  Contact
                 </button>
               </li>
             </ul>
