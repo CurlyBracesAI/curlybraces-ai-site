@@ -190,7 +190,7 @@ export default function HowItWorks() {
                 Example: Intelligent Adaptation
               </h3>
               <p className="text-muted-foreground mb-8" data-testid="text-example-intro">
-                An architectural practice using an AI agent to generate weekly triage reports for staff and management:
+                An architectural practice using Rosie AI agent to generate weekly project triage reports for staff and management meetings:
               </p>
               
               <div className="space-y-4 flex-1">

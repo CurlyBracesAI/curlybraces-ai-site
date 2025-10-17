@@ -21,6 +21,24 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <button
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
+                  data-testid="link-footer-home"
+                >
+                  Home
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
+                  data-testid="link-footer-features"
+                >
+                  Features
+                </button>
+              </li>
+              <li>
+                <button
                   onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
                   data-testid="link-footer-how-it-works"
