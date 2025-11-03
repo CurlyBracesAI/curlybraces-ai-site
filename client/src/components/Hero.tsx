@@ -43,6 +43,21 @@ export default function Hero() {
                 Let's talk
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
+              <a
+                href="https://rosie.curlybraces.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="text-base px-8 border-cyan-500/50 text-foreground hover:border-cyan-500 backdrop-blur-sm"
+                  data-testid="button-hero-rosie"
+                >
+                  <Sparkles className="mr-2 h-4 w-4" />
+                  Try Rosie Assistant
+                </Button>
+              </a>
               <Button
                 size="lg"
                 variant="outline"

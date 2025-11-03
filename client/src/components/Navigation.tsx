@@ -43,6 +43,20 @@ export default function Navigation() {
                 {item.name}
               </button>
             ))}
+            <a
+              href="https://rosie.curlybraces.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="sm"
+                variant="outline"
+                className="border-cyan-500/50 text-foreground hover:border-cyan-500"
+                data-testid="button-rosie-assistant"
+              >
+                Rosie Assistant
+              </Button>
+            </a>
             <Button
               size="sm"
               className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white border-0 no-default-hover-elevate"
@@ -78,6 +92,20 @@ export default function Navigation() {
                 {item.name}
               </button>
             ))}
+            <a
+              href="https://rosie.curlybraces.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <Button
+                variant="outline"
+                className="w-full border-cyan-500/50 text-foreground hover:border-cyan-500"
+                data-testid="button-mobile-rosie-assistant"
+              >
+                Rosie Assistant
+              </Button>
+            </a>
             <Button
               className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white border-0 no-default-hover-elevate"
               onClick={() => handleNavClick("#contact")}

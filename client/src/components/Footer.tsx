@@ -64,6 +64,17 @@ export default function Footer() {
                   Case Studies
                 </button>
               </li>
+              <li>
+                <a
+                  href="https://rosie.curlybraces.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
+                  data-testid="link-footer-rosie-assistant"
+                >
+                  Rosie AI Assistant
+                </a>
+              </li>
             </ul>
           </div>
 
