@@ -5,6 +5,7 @@ import RosieDetails from "@/components/RosieDetails";
 import AgenticWorkflows from "@/components/AgenticWorkflows";
 import HowItWorks from "@/components/HowItWorks";
 import CaseStudies from "@/components/CaseStudies";
+import SecurityCompliance from "@/components/SecurityCompliance";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <AgenticWorkflows />
         <HowItWorks />
         <CaseStudies />
+        <SecurityCompliance />
         <Contact />
       </main>
       <Footer />

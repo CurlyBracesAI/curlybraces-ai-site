@@ -65,6 +65,15 @@ export default function Footer() {
                 </button>
               </li>
               <li>
+                <button
+                  onClick={() => document.getElementById('security')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
+                  data-testid="link-footer-security"
+                >
+                  Security
+                </button>
+              </li>
+              <li>
                 <a
                   href="https://rosie.curlybraces.ai"
                   target="_blank"
