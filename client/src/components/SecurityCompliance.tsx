@@ -30,7 +30,7 @@ export default function SecurityCompliance() {
   ];
 
   return (
-    <section id="security" className="py-24 px-6 bg-background">
+    <section id="security" className="py-24 px-6 pb-12 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-security-title">
@@ -66,7 +66,7 @@ export default function SecurityCompliance() {
 
         <div className="bg-card/30 rounded-lg p-8 border border-border">
           <p className="text-base text-muted-foreground leading-relaxed mb-4" data-testid="text-security-aws-statement">
-            <strong className="text-foreground">CurlyBraces.ai runs entirely on AWS infrastructure</strong>, inheriting AWS's enterprise-grade security controls and compliance certifications (including SOC 2 Type II, ISO 27001, and HIPAA-eligible services).
+            <strong className="text-foreground">CurlyBraces.ai runs on AWS infrastructure</strong>, inheriting AWS's enterprise-grade security controls and compliance certifications (including SOC 2 Type II, ISO 27001, and HIPAA-eligible services).
           </p>
           <p className="text-base text-muted-foreground leading-relaxed" data-testid="text-security-safeguards">
             We implement additional safeguards such as encryption at rest and in transit, IAM-based access control, and continuous logging through AWS CloudTrail.
