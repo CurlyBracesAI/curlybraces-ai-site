@@ -11,7 +11,12 @@ export default function SupportedPlatforms() {
     { name: "Zoho", logo: "https://cdn.brandfetch.io/zohocorp.com/logo?format=svg&width=200" },
     { name: "Close.com", logo: "https://cdn.brandfetch.io/close.com/logo?format=svg&width=200" },
     { name: "Monday.com", logo: "https://cdn.brandfetch.io/monday.com/logo?format=svg&width=200" },
-    { name: "Asana", logo: "https://cdn.brandfetch.io/asana.com/logo?format=svg&width=200" }
+    { name: "Asana", logo: "https://cdn.brandfetch.io/asana.com/logo?format=svg&width=200" },
+    { name: "TherapyNotes", logo: "https://cdn.brandfetch.io/therapynotes.com/logo?format=svg&width=200" },
+    { name: "Clio", logo: "https://cdn.brandfetch.io/clio.com/logo?format=svg&width=200" },
+    { name: "QuickBooks", logo: "https://cdn.brandfetch.io/quickbooks.com/logo?format=svg&width=200" },
+    { name: "SimplePractice", logo: "https://cdn.brandfetch.io/simplepractice.com/logo?format=svg&width=200" },
+    { name: "Lawcus", logo: "https://cdn.brandfetch.io/lawcus.com/logo?format=svg&width=200" }
   ];
 
   const comingSoonTextOnly = [
