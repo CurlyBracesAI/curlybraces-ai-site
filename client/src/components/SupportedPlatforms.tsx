@@ -48,12 +48,12 @@ export default function SupportedPlatforms() {
         </div>
 
         {/* Row 1: Supported Now */}
-        <div className="mb-16">
-          <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-8 text-center" data-testid="text-platforms-supported-now">
+        <div className="mb-8">
+          <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 text-center" data-testid="text-platforms-supported-now">
             Supported Now
           </h3>
           <div className="flex justify-center">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 justify-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-1 justify-items-center">
               {supportedNow.map((platform, index) => (
                 <LogoCard key={index} name={platform.name} logo={platform.logo} />
               ))}
@@ -62,12 +62,12 @@ export default function SupportedPlatforms() {
         </div>
 
         {/* Row 2: Coming Soon with Logos */}
-        <div className="mb-16">
-          <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-8 text-center" data-testid="text-platforms-coming-soon">
+        <div className="mb-8">
+          <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 text-center" data-testid="text-platforms-coming-soon">
             Coming Soon
           </h3>
           <div className="flex justify-center">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 justify-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-1 justify-items-center">
               {comingSoonLogos.map((platform, index) => (
                 <LogoCard key={index} name={platform.name} logo={platform.logo} />
               ))}
