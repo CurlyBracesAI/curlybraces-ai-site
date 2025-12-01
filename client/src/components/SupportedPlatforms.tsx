@@ -1,17 +1,17 @@
 export default function SupportedPlatforms() {
   const supportedNow = [
-    { name: "Pipedrive", logo: "pipedrive" },
-    { name: "Wix", logo: "wix" }
+    { name: "Pipedrive", logo: "https://cdn.brandfetch.io/pipedrive.com/logo?format=svg&width=200" },
+    { name: "Wix", logo: "https://cdn.brandfetch.io/wix.com/logo?format=svg&width=200" }
   ];
 
   const comingSoonLogos = [
-    { name: "Webflow", logo: "webflow" },
-    { name: "WordPress", logo: "wordpress" },
-    { name: "Shopify", logo: "shopify" },
-    { name: "Zoho", logo: "zoho" },
-    { name: "Close.com", logo: "closecom" },
-    { name: "Monday.com", logo: "monday" },
-    { name: "Asana", logo: "asana" }
+    { name: "Webflow", logo: "https://cdn.brandfetch.io/webflow.com/logo?format=svg&width=200" },
+    { name: "WordPress", logo: "https://cdn.brandfetch.io/wordpress.org/logo?format=svg&width=200" },
+    { name: "Shopify", logo: "https://cdn.brandfetch.io/shopify.com/logo?format=svg&width=200" },
+    { name: "Zoho", logo: "https://cdn.brandfetch.io/zohocorp.com/logo?format=svg&width=200" },
+    { name: "Close.com", logo: "https://cdn.brandfetch.io/close.com/logo?format=svg&width=200" },
+    { name: "Monday.com", logo: "https://cdn.brandfetch.io/monday.com/logo?format=svg&width=200" },
+    { name: "Asana", logo: "https://cdn.brandfetch.io/asana.com/logo?format=svg&width=200" }
   ];
 
   const comingSoonTextOnly = [
@@ -20,12 +20,17 @@ export default function SupportedPlatforms() {
     { name: "Zendesk" }
   ];
 
-  const LogoPlaceholder = ({ name, logo }: { name: string; logo: string }) => (
-    <div className="flex flex-col items-center gap-2 p-4">
-      <div className="w-16 h-16 flex items-center justify-center bg-muted rounded-md grayscale opacity-75 hover:opacity-100 transition-opacity">
-        <span className="text-xs font-semibold text-muted-foreground text-center px-1">{name}</span>
+  const LogoCard = ({ name, logo }: { name: string; logo: string }) => (
+    <div className="flex flex-col items-center gap-3 p-4">
+      <div className="w-20 h-20 flex items-center justify-center bg-muted rounded-md p-2 hover:bg-muted/80 transition-colors">
+        <img 
+          src={logo} 
+          alt={name}
+          className="max-w-full max-h-full grayscale opacity-75 hover:opacity-100 transition-opacity"
+          data-testid={`logo-${name.toLowerCase()}`}
+        />
       </div>
-      <span className="text-xs text-muted-foreground font-medium">{name}</span>
+      <span className="text-xs text-muted-foreground font-medium text-center">{name}</span>
     </div>
   );
 
@@ -49,7 +54,7 @@ export default function SupportedPlatforms() {
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
             {supportedNow.map((platform, index) => (
-              <LogoPlaceholder key={index} name={platform.name} logo={platform.logo} />
+              <LogoCard key={index} name={platform.name} logo={platform.logo} />
             ))}
           </div>
         </div>
@@ -61,7 +66,7 @@ export default function SupportedPlatforms() {
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
             {comingSoonLogos.map((platform, index) => (
-              <LogoPlaceholder key={index} name={platform.name} logo={platform.logo} />
+              <LogoCard key={index} name={platform.name} logo={platform.logo} />
             ))}
           </div>
         </div>
