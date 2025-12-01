@@ -116,7 +116,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="how-it-works" className="py-12 md:py-24 px-6">
+    <section id="how-it-works" className="py-12 md:py-24 px-6 bg-card">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center lg:text-left" data-testid="text-how-it-works-title">
           How Rosie Agentic AI Works
