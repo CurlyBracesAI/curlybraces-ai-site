@@ -82,7 +82,7 @@ export default function SupportedPlatforms() {
           </h3>
           <div className="flex flex-wrap items-center justify-center gap-4" data-testid="text-platforms-textonly">
             {comingSoonTextOnly.map((platform, index) => (
-              <span key={index} className="text-base text-muted-foreground font-medium">
+              <span key={index} className="text-2xl text-muted-foreground font-medium">
                 {platform.name}
                 {index < comingSoonTextOnly.length - 1 && <span className="ml-4">•</span>}
               </span>
