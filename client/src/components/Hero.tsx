@@ -58,15 +58,6 @@ export default function Hero() {
                   Try Rosie Assistant
                 </Button>
               </a>
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-base px-8 bg-gradient-to-r from-violet-500/10 to-purple-500/10 border-violet-500/50 text-foreground hover:border-violet-500 backdrop-blur-sm"
-                onClick={handleLearnMore}
-                data-testid="button-hero-secondary"
-              >
-                See How It Works
-              </Button>
             </div>
             
             <div className="absolute left-full top-[calc(3rem+1.5rem)] bottom-0 w-[500px] pointer-events-none z-0 hidden lg:block ml-12">
