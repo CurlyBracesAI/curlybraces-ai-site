@@ -21,7 +21,7 @@ export default function SupportedPlatforms() {
   ];
 
   const LogoCard = ({ name, logo }: { name: string; logo: string }) => (
-    <div className="flex flex-col items-center gap-3 p-4">
+    <div className="flex flex-col items-center gap-2 p-1">
       <div className="w-40 h-40 flex items-center justify-center bg-white rounded-md p-2 hover:shadow-md transition-shadow">
         <img 
           src={logo} 
@@ -48,7 +48,7 @@ export default function SupportedPlatforms() {
         </div>
 
         {/* Row 1: Supported Now */}
-        <div className="mb-8">
+        <div className="mb-2">
           <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 text-center" data-testid="text-platforms-supported-now">
             Supported Now
           </h3>
@@ -62,7 +62,7 @@ export default function SupportedPlatforms() {
         </div>
 
         {/* Row 2: Coming Soon with Logos */}
-        <div className="mb-8">
+        <div className="mb-2">
           <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3 text-center" data-testid="text-platforms-coming-soon">
             Coming Soon
           </h3>
