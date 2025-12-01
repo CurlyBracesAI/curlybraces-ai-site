@@ -22,11 +22,11 @@ export default function SupportedPlatforms() {
 
   const LogoCard = ({ name, logo }: { name: string; logo: string }) => (
     <div className="flex flex-col items-center gap-3 p-4">
-      <div className="w-20 h-20 flex items-center justify-center bg-muted rounded-md p-2 hover:bg-muted/80 transition-colors">
+      <div className="w-20 h-20 flex items-center justify-center bg-white rounded-md p-2 hover:shadow-md transition-shadow">
         <img 
           src={logo} 
           alt={name}
-          className="max-w-full max-h-full grayscale opacity-75 hover:opacity-100 transition-opacity"
+          className="max-w-full max-h-full"
           data-testid={`logo-${name.toLowerCase()}`}
         />
       </div>
