@@ -82,7 +82,7 @@ export default function SupportedPlatforms() {
 
         {/* Row 3: Coming Soon Text-Only */}
         <div className="mb-12 mt-8">
-          <h3 className="text-base font-semibold text-foreground uppercase tracking-wider mb-8 text-center" data-testid="text-platforms-approval">
+          <h3 className="text-base font-semibold text-foreground uppercase tracking-wider mb-3 text-center" data-testid="text-platforms-approval">
             Coming Soon (Awaiting Marketplace Approval)
           </h3>
           <div className="flex flex-wrap items-center justify-center gap-4" data-testid="text-platforms-textonly">
