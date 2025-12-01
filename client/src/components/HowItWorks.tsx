@@ -151,7 +151,7 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        <div className="bg-card/30 rounded-lg p-8 md:p-12">
+        <div className="bg-background rounded-lg p-8 md:p-12">
           <h3 className="text-2xl md:text-3xl font-bold mb-6" data-testid="text-customization-title">
             Built for Your Platform
           </h3>
