@@ -58,7 +58,7 @@ export default function SupportedPlatforms() {
             Supported Now
           </h3>
           <div className="flex justify-center">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-1 justify-items-center">
+            <div className="flex flex-wrap gap-1 justify-center">
               {supportedNow.map((platform, index) => (
                 <LogoCard key={index} name={platform.name} logo={platform.logo} />
               ))}
@@ -72,7 +72,7 @@ export default function SupportedPlatforms() {
             Coming Soon
           </h3>
           <div className="flex justify-center">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-1 justify-items-center">
+            <div className="flex flex-wrap gap-1 justify-center">
               {comingSoonLogos.map((platform, index) => (
                 <LogoCard key={index} name={platform.name} logo={platform.logo} />
               ))}
