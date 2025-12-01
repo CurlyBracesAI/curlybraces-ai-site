@@ -8,6 +8,7 @@ export default function SupportedPlatforms() {
     { name: "Salesforce", status: "coming" },
     { name: "Zoho", status: "coming" },
     { name: "Close.com", status: "coming" },
+    { name: "Zendesk", status: "coming" },
     { name: "Webflow", status: "coming" },
     { name: "WordPress", status: "coming" },
     { name: "Monday.com", status: "coming" },
