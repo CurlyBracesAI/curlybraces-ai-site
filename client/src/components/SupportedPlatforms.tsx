@@ -5,8 +5,13 @@ export default function SupportedPlatforms() {
     { name: "Pipedrive", status: "live" },
     { name: "Wix", status: "live" },
     { name: "HubSpot", status: "coming" },
+    { name: "Salesforce", status: "coming" },
+    { name: "Zoho", status: "coming" },
+    { name: "Close.com", status: "coming" },
     { name: "Webflow", status: "coming" },
     { name: "WordPress", status: "coming" },
+    { name: "Monday.com", status: "coming" },
+    { name: "Asana", status: "coming" },
     { name: "Shopify", status: "coming" }
   ];
 
