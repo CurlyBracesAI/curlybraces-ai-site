@@ -22,7 +22,7 @@ export default function SupportedPlatforms() {
 
   const LogoCard = ({ name, logo }: { name: string; logo: string }) => (
     <div className="flex flex-col items-center gap-3 p-4">
-      <div className="w-20 h-20 flex items-center justify-center bg-white rounded-md p-2 hover:shadow-md transition-shadow">
+      <div className="w-40 h-40 flex items-center justify-center bg-white rounded-md p-2 hover:shadow-md transition-shadow">
         <img 
           src={logo} 
           alt={name}
