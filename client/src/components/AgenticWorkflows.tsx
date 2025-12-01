@@ -5,45 +5,44 @@ import snakeImage from "@assets/stock_images/snake_vertical_portr_38647f22.jpg";
 export default function AgenticWorkflows() {
   const agents = [
     {
-      name: "Agent A — Client Report/Proposal Engine:",
-      description: "Creates in-depth structured, branded proposals instantly.",
-      badge: "Active",
+      name: "Proposal Generator",
+      description: "Creates in-depth structured, branded proposals instantly from your CRM data.",
+      badge: "Available",
       badgeColor: "bg-emerald-500 text-white",
       cardBg: "bg-gradient-to-br from-emerald-500/25 to-teal-500/25"
     },
     {
-      name: "Agent B — Client & Partner Introductions/Tours:",
-      description: "Automates multiple scheduling and introductions.",
-      badge: "Active",
+      name: "Follow-Up Agent",
+      description: "Automates personalized follow-up sequences based on deal stage and activity.",
+      badge: "Available",
       badgeColor: "bg-blue-500 text-white",
       cardBg: "bg-gradient-to-br from-blue-500/25 to-cyan-500/25"
     },
     {
-      name: "Agent C — Daily In-house Triage Reports:",
-      description: "Summarizes project activity, planning and performance updates.",
-      badge: "Active",
+      name: "Triage Assistant",
+      description: "Summarizes daily activity, prioritizes leads, and generates performance reports.",
+      badge: "Available",
       badgeColor: "bg-violet-500 text-white",
       cardBg: "bg-gradient-to-br from-violet-500/25 to-purple-500/25"
     },
     {
-      name: "Agent D — Inventory Updates:",
-      description: "Provides analysis and intelegent predictions for short and long-term inventory.",
-      badge: "Active",
+      name: "Data Enricher",
+      description: "Automatically completes missing contact and company information.",
+      badge: "Available",
       badgeColor: "bg-orange-500 text-white",
       cardBg: "bg-gradient-to-br from-orange-500/25 to-amber-500/25"
     },
     {
-      name: "Agent E — Instant Content Sync:",
-      description:
-        "Maintains cross-platform consistency of client data and online listings.",
-      badge: "Active",
+      name: "Content Sync Agent",
+      description: "Maintains cross-platform consistency of client data and listings.",
+      badge: "Available",
       badgeColor: "bg-pink-500 text-white",
       cardBg: "bg-gradient-to-br from-pink-500/25 to-rose-500/25"
     },
     {
-      name: "Agent F — Market Finder:",
-      description: "Scans public and private data sources for new marketing/sales opportunities.",
-      badge: "Active",
+      name: "Deal Notes Agent",
+      description: "Automatically generates and updates deal notes from communications.",
+      badge: "Available",
       badgeColor: "bg-amber-500 text-white",
       cardBg: "bg-gradient-to-br from-amber-500/25 to-yellow-500/25"
     },
@@ -69,14 +68,13 @@ export default function AgenticWorkflows() {
                 className="text-4xl md:text-5xl font-bold mb-6 max-w-2xl"
                 data-testid="text-workflows-title"
               >
-                Our Current Agentic<br />Workflows (Office RE)
+                Ready-to-Deploy<br />AI Agents
               </h2>
               <p
                 className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-12"
                 data-testid="text-workflows-subtitle"
               >
-                Each Rosie Agent represents a specialized AI automation build that
-                is running and in production (presently for RE, we adapt to your specified industry requirements):
+                Each Rosie Agent is a purpose-built automation that installs directly into your platform. Choose the agents you need and start automating immediately:
               </p>
             </div>
 
@@ -99,7 +97,7 @@ export default function AgenticWorkflows() {
                         className="leading-relaxed"
                         data-testid={`text-agent-${index}`}
                       >
-                        <strong className="text-foreground">{agent.name}</strong>{" "}
+                        <strong className="text-foreground">{agent.name}:</strong>{" "}
                         <span className="text-muted-foreground">
                           {agent.description}
                         </span>
@@ -114,9 +112,7 @@ export default function AgenticWorkflows() {
               className="text-muted-foreground leading-relaxed max-w-md"
               data-testid="text-workflows-footer"
             >
-              We continue to expand Rosie's agent library and invite partners to
-              join our <strong className="text-foreground">beta program</strong>{" "}
-              for custom domain-specific builds.
+              New agents are added regularly. All agents work seamlessly with your existing integrations and subscription plan.
             </p>
           </div>
         </div>

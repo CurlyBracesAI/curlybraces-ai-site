@@ -1,32 +1,38 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Building2, Briefcase, Heart } from "lucide-react";
+import { Building2, Briefcase, Heart, Clock, TrendingUp, CheckCircle } from "lucide-react";
 
 export default function CaseStudies() {
   const caseStudies = [
     {
       icon: Building2,
-      title: "Real Estate Firm",
-      description: "Automated client proposal generation for a firm sending 500+ property proposals monthly, reducing preparation time from 2 hours to 5 minutes per proposal.",
-      tags: ["Proposal Automation", "CRM Integration"],
+      title: "Real Estate Agency",
+      result: "2 hours → 5 minutes",
+      resultLabel: "per proposal",
+      description: "A real estate firm sending 500+ property proposals monthly now generates each proposal in under 5 minutes. The Proposal Generator agent pulls data directly from Pipedrive and creates branded, client-ready documents instantly.",
+      tags: ["Proposal Generator", "Pipedrive"],
       iconBg: "bg-gradient-to-br from-blue-400 to-cyan-500",
       iconColor: "text-white",
       cardBg: "bg-gradient-to-br from-blue-400/25 to-cyan-500/25"
     },
     {
       icon: Briefcase,
-      title: "Legal Practice",
-      description: "Streamlined defendant demand letter creation across multiple cases, enabling attorneys to handle 3x more cases with consistent, compliant documentation.",
-      tags: ["Document Generation", "Compliance"],
-      iconBg: "bg-gradient-to-br from-violet-400/25 to-purple-500/25",
+      title: "Sales Team",
+      result: "3x more",
+      resultLabel: "follow-ups sent",
+      description: "A B2B sales team tripled their follow-up volume without adding headcount. The Follow-Up Agent automatically drafts personalized messages based on deal stage, past interactions, and time since last contact.",
+      tags: ["Follow-Up Agent", "HubSpot"],
+      iconBg: "bg-gradient-to-br from-violet-400 to-purple-500",
       iconColor: "text-white",
       cardBg: "bg-gradient-to-br from-violet-400/25 to-purple-500/25"
     },
     {
       icon: Heart,
       title: "Healthcare Practice",
-      description: "Automated patient intake form processing and data entry, eliminating 20+ hours of manual work per week and improving data accuracy by 95%.",
-      tags: ["Data Processing", "Healthcare"],
+      result: "20+ hours",
+      resultLabel: "saved weekly",
+      description: "A healthcare practice eliminated 20+ hours of manual data entry per week. The Data Enricher agent automatically processes intake forms and populates patient records with 95% accuracy.",
+      tags: ["Data Enricher", "Automation"],
       iconBg: "bg-gradient-to-br from-rose-400 to-pink-500",
       iconColor: "text-white",
       cardBg: "bg-gradient-to-br from-rose-400/25 to-pink-500/25"
@@ -38,10 +44,10 @@ export default function CaseStudies() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-case-studies-title">
-            Case Studies
+            See What's Possible
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-case-studies-subtitle">
-            Real results from businesses transforming their operations with AI automation
+            Real results from teams using Rosie AI agents to automate their workflows
           </p>
         </div>
 
@@ -57,6 +63,10 @@ export default function CaseStudies() {
                   <CardTitle data-testid={`text-case-study-title-${index}`}>
                     {study.title}
                   </CardTitle>
+                  <div className="mt-2">
+                    <span className="text-2xl font-bold text-primary">{study.result}</span>
+                    <span className="text-sm text-muted-foreground ml-2">{study.resultLabel}</span>
+                  </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed" data-testid={`text-case-study-description-${index}`}>

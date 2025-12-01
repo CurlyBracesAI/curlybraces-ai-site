@@ -49,29 +49,29 @@ export default function HowItWorks() {
   const customizationAspects = [
     {
       icon: FileText,
-      title: "Proprietary Data Integration",
-      description: "Trained on your organization's specific documents, communications, and historical data.",
+      title: "CRM Integration",
+      description: "Connects directly to Pipedrive, HubSpot, and more. Pull data automatically to power your automations.",
       iconBg: "bg-gradient-to-br from-orange-400 to-red-500",
       iconColor: "text-white"
     },
     {
       icon: Link2,
-      title: "Tech Stack Connection",
-      description: "Integrates with your ERP, CRM, and other software systems to act across your entire ecosystem.",
+      title: "Platform Connections",
+      description: "Works with Wix, Webflow, WordPress and other platforms. Sync data across your entire ecosystem.",
       iconBg: "bg-gradient-to-br from-cyan-400 to-blue-500",
       iconColor: "text-white"
     },
     {
       icon: ShieldCheck,
-      title: "Goals & Guardrails",
-      description: "Program the AI's objectives and set clear boundaries for auditable, secure, and compliant decisions.",
+      title: "Secure & Compliant",
+      description: "SOC2-based practices, encrypted data, and clear audit trails for every automation.",
       iconBg: "bg-gradient-to-br from-green-400 to-emerald-500",
       iconColor: "text-white"
     },
     {
       icon: Sparkles,
-      title: "Custom User Experience",
-      description: "Streamlined interfaces make complex workflows simple for your employees to manage.",
+      title: "Simple Setup",
+      description: "Install, configure, and start automating in minutes. No engineering required.",
       iconBg: "bg-gradient-to-br from-fuchsia-400 to-pink-500",
       iconColor: "text-white"
     }
@@ -80,36 +80,36 @@ export default function HowItWorks() {
   const workflowSteps = [
     {
       icon: Eye,
-      step: "Perception",
-      description: "Monitors project timelines, drawing software progress (Schematic Design, Design Development, Construction Administration / Documents), team schedules, and upcoming deadlines.",
+      step: "Data Collection",
+      description: "Pulls deal data from your CRM — open deals, last activity dates, deal values, and assigned owners.",
       iconBg: "bg-gradient-to-br from-blue-400 to-cyan-500",
       iconColor: "text-white"
     },
     {
       icon: Lightbulb,
-      step: "Reasoning",
-      description: "Analyzes which projects are on track versus behind schedule, identifies bottlenecks, and correlates team capacity with project demands.",
+      step: "Analysis",
+      description: "Identifies stalled deals, overdue follow-ups, and high-priority opportunities based on your configured rules.",
       iconBg: "bg-gradient-to-br from-amber-400 to-yellow-500",
       iconColor: "text-white"
     },
     {
       icon: ListChecks,
-      step: "Planning",
-      description: "Determines resource reallocation needs, prioritizes critical deliverables, and structures weekly report for staff and management stakeholders.",
+      step: "Prioritization",
+      description: "Ranks deals by urgency and value, highlighting which need immediate attention.",
       iconBg: "bg-gradient-to-br from-violet-400 to-purple-500",
       iconColor: "text-white"
     },
     {
       icon: Play,
-      step: "Execution",
-      description: "Generates detailed triage report with project status updates, deadline alerts, staffing recommendations, and executive summary for weekly meetings.",
+      step: "Report Generation",
+      description: "Creates a formatted triage report with deal summaries, recommended actions, and key metrics.",
       iconBg: "bg-gradient-to-br from-emerald-400 to-green-500",
       iconColor: "text-white"
     },
     {
       icon: GraduationCap,
-      step: "Learning",
-      description: "Refines deadline predictions based on project outcomes and improves resource allocation suggestions over time.",
+      step: "Continuous Improvement",
+      description: "Learns from your deal outcomes to improve prioritization and recommendations over time.",
       iconBg: "bg-gradient-to-br from-pink-400 to-rose-500",
       iconColor: "text-white"
     }
@@ -153,10 +153,10 @@ export default function HowItWorks() {
 
         <div className="bg-card/30 rounded-lg p-8 md:p-12">
           <h3 className="text-2xl md:text-3xl font-bold mb-6" data-testid="text-customization-title">
-            Customization for Real-World Business Performance
+            Built for Your Platform
           </h3>
           <p className="text-lg text-muted-foreground mb-10 max-w-4xl" data-testid="text-customization-intro">
-            Customizing an agentic AI assistant to meet your specific business requirements is what enables it to deliver optimal real-world performance. This process incorporates your company's unique data, systems, and logic.
+            Rosie AI agents are designed to integrate seamlessly with your existing platforms. Connect your CRM, configure your preferences, and start automating in minutes — not months.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -187,10 +187,10 @@ export default function HowItWorks() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch flex flex-col gap-12">
             <div className="flex flex-col">
               <h3 className="text-2xl md:text-3xl font-bold mb-4" data-testid="text-example-title">
-                Example: Intelligent Adaptation
+                Example: Triage Assistant in Action
               </h3>
               <p className="text-muted-foreground mb-8" data-testid="text-example-intro">
-                An architectural practice using Rosie AI agent to generate weekly project triage reports for staff and management planning meetings:
+                See how the Triage Assistant agent automatically generates weekly project reports for a sales team:
               </p>
               
               <div className="space-y-4 flex-1">

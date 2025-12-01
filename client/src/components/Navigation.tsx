@@ -8,12 +8,10 @@ export default function Navigation() {
   const [location] = useLocation();
 
   const navItems = [
-    { name: "Home", href: "/" },
     { name: "Features", href: "#features" },
-    { name: "Current Agents", href: "#current-agents" },
-    { name: "How It Works", href: "#how-it-works" },
-    { name: "Case Studies", href: "#case-studies" },
-    { name: "Contact", href: "#contact" },
+    { name: "AI Agents", href: "#current-agents" },
+    { name: "Use Cases", href: "#case-studies" },
+    { name: "Pricing", href: "#pricing" },
   ];
 
   const handleNavClick = (href: string) => {
@@ -60,10 +58,10 @@ export default function Navigation() {
             <Button
               size="sm"
               className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white border-0 no-default-hover-elevate"
-              onClick={() => handleNavClick("#contact")}
+              onClick={() => handleNavClick("#pricing")}
               data-testid="button-get-started"
             >
-              Get Started
+              Start Free Trial
             </Button>
           </div>
 
@@ -108,10 +106,10 @@ export default function Navigation() {
             </a>
             <Button
               className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white border-0 no-default-hover-elevate"
-              onClick={() => handleNavClick("#contact")}
+              onClick={() => handleNavClick("#pricing")}
               data-testid="button-mobile-get-started"
             >
-              Get Started
+              Start Free Trial
             </Button>
           </div>
         </div>

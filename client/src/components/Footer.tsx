@@ -12,22 +12,13 @@ export default function Footer() {
               {"{"}curlybraces.ai{"}"}
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed" data-testid="text-footer-tagline">
-              Generative AI Automation that naturally adapts to your business
+              AI agents that automate your proposals, follow-ups, and reports. Plug-and-play for your CRM.
             </p>
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold mb-4" data-testid="text-footer-quick-links-title">Quick Links</h4>
+            <h4 className="text-sm font-semibold mb-4" data-testid="text-footer-quick-links-title">Product</h4>
             <ul className="space-y-2">
-              <li>
-                <button
-                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
-                  data-testid="link-footer-home"
-                >
-                  Home
-                </button>
-              </li>
               <li>
                 <button
                   onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
@@ -39,20 +30,20 @@ export default function Footer() {
               </li>
               <li>
                 <button
-                  onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => document.getElementById('current-agents')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
-                  data-testid="link-footer-how-it-works"
+                  data-testid="link-footer-agents"
                 >
-                  How It Works
+                  AI Agents
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => document.getElementById('current-agents')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
-                  data-testid="link-footer-current-agents"
+                  data-testid="link-footer-pricing"
                 >
-                  Current Agents
+                  Pricing
                 </button>
               </li>
               <li>
@@ -61,7 +52,7 @@ export default function Footer() {
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
                   data-testid="link-footer-case-studies"
                 >
-                  Case Studies
+                  Use Cases
                 </button>
               </li>
               <li>
@@ -81,22 +72,36 @@ export default function Footer() {
                   className="inline-block text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
                   data-testid="link-footer-rosie-assistant"
                 >
-                  Rosie AI Assistant
+                  Try Rosie Free
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold mb-4" data-testid="text-footer-contact-title">Contact</h4>
-            <a
-              href="mailto:hello@curlybraces.ai"
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
-              data-testid="link-footer-email"
-            >
-              <Mail className="w-4 h-4" />
-              hello@curlybraces.ai
-            </a>
+            <h4 className="text-sm font-semibold mb-4" data-testid="text-footer-contact-title">Support</h4>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="mailto:support@curlybraces.ai"
+                  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
+                  data-testid="link-footer-support"
+                >
+                  <Mail className="w-4 h-4" />
+                  support@curlybraces.ai
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:enterprise@curlybraces.ai"
+                  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
+                  data-testid="link-footer-enterprise"
+                >
+                  <Mail className="w-4 h-4" />
+                  Enterprise Inquiries
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
