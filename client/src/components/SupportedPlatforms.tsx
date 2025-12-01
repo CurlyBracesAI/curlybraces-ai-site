@@ -52,10 +52,12 @@ export default function SupportedPlatforms() {
           <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-8 text-center" data-testid="text-platforms-supported-now">
             Supported Now
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
-            {supportedNow.map((platform, index) => (
-              <LogoCard key={index} name={platform.name} logo={platform.logo} />
-            ))}
+          <div className="flex justify-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 justify-items-center">
+              {supportedNow.map((platform, index) => (
+                <LogoCard key={index} name={platform.name} logo={platform.logo} />
+              ))}
+            </div>
           </div>
         </div>
 
@@ -64,10 +66,12 @@ export default function SupportedPlatforms() {
           <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-8 text-center" data-testid="text-platforms-coming-soon">
             Coming Soon
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
-            {comingSoonLogos.map((platform, index) => (
-              <LogoCard key={index} name={platform.name} logo={platform.logo} />
-            ))}
+          <div className="flex justify-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 justify-items-center">
+              {comingSoonLogos.map((platform, index) => (
+                <LogoCard key={index} name={platform.name} logo={platform.logo} />
+              ))}
+            </div>
           </div>
         </div>
 
