@@ -1,0 +1,140 @@
+Replit Agent Instructions: CurlyBraces.ai Website Update (SaaS Shift)
+1. Reposition CurlyBraces.ai as a SaaS product, not a consultancy
+
+Replace all consultancy-toned language with SaaS-oriented copy.
+Emphasize:
+
+subscription plans
+
+plug-and-play setup
+
+ready-made AI agents
+
+integrations with platforms (Pipedrive, Wix, etc.)
+
+self-service onboarding
+
+Remove or rewrite anything that implies bespoke “custom builds.”
+
+2. Update hero section
+
+Replace the current “Agentic AI Automation that adapts to your business” copy with:
+
+Headline:
+“AI Agents That Automate Your Proposals, Follow-Ups, and Reports”
+
+Sub:
+“Ready-to-use automation for your CRM and web platforms. Fast setup. No engineering required.”
+
+Add a CTA button: “Start Free Trial” (or “Install on Pipedrive” when live).
+
+3. Replace customization-focused feature cards with SaaS-style benefits
+
+Create 4 new cards:
+
+Plug-and-Play Setup
+Works instantly with Pipedrive, Wix, HubSpot (coming soon).
+
+Purpose-Built AI Agents
+Proposal writer, follow-up generator, triage assistant, data enricher.
+
+Scales With Your Team
+From solo users to full sales teams. Per-user and usage plans available.
+
+Enterprise-Grade Quality
+Accurate outputs, SOC2-based practices, secure API workflows.
+
+4. Add a pricing section
+
+Simple, transparent plans:
+
+Basic — $15/mo
+
+AI proposal generator
+
+Intake summaries
+
+Automatic Deal Notes
+
+Light usage included
+
+Core — $29/mo
+
+All Basic features
+
+Multi-step automations
+
+Agent chaining
+
+Higher usage limits
+
+Optional Add-Ons
+
+Follow-Up Agent
+
+Email Draft Agent
+
+Triage Agent
+
+Data Enrichment Agent
+
+Team Plans — $49/user/mo
+
+usage-based billing for heavy customers
+
+5. Add a “Supported Platforms” strip
+
+Place near top or mid-page.
+
+Logos:
+Pipedrive • Wix • HubSpot • Webflow • WordPress • Shopify
+(Use “coming soon” tags where needed.)
+
+6. Convert vertical/industry sections into use-case examples
+
+Rewrite real estate, legal, architecture, healthcare etc. sections as examples of how the existing agents are used, not pitches for custom projects.
+
+Focus on:
+
+speed
+
+accuracy
+
+time saved
+
+automation value
+Not “we build bespoke workflows.”
+
+7. Update footer + contact flow
+
+Change “Schedule a Consultation” to:
+
+“Create Account”
+
+“Start Free Trial”
+
+“Request Enterprise Plan” (optional)
+
+Keep an email for support, but the primary UX should reinforce SaaS, not agency.
+
+8. Remove the beta-program framing
+
+Replace any “Beta Partner”, “Let’s talk”, or “Custom Integration Discussion” language with SaaS terminology:
+
+onboarding
+
+setup
+
+install
+
+trial
+
+usage
+
+subscription
+No more “let’s meet and discuss your needs.”
+
+9. Keep design/layout intact
+
+Do not alter structure unless necessary.
+Focus on copy replacement, not redesign.
