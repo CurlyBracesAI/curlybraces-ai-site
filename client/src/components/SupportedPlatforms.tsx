@@ -19,7 +19,7 @@ export default function SupportedPlatforms() {
   );
 
   return (
-    <section id="integrations" className="py-4 px-6 bg-background">
+    <section id="integrations" className="py-4 pb-20 md:pb-32 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-4">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-1" data-testid="text-platforms-title">
