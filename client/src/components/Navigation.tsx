@@ -8,9 +8,10 @@ export default function Navigation() {
   const [location] = useLocation();
 
   const navItems = [
-    { name: "Features", href: "#features" },
-    { name: "AI Agents", href: "#current-agents" },
-    { name: "Use Cases", href: "#case-studies" },
+    { name: "Who It's For", href: "#who-its-for" },
+    { name: "Agent G", href: "#meet-agent-g" },
+    { name: "Integrations", href: "#integrations" },
+    { name: "Security", href: "#security" },
     { name: "Pricing", href: "#pricing" },
   ];
 
@@ -61,7 +62,7 @@ export default function Navigation() {
               onClick={() => handleNavClick("#pricing")}
               data-testid="button-get-started"
             >
-              Start Free Trial
+              Request Access
             </Button>
           </div>
 
@@ -109,7 +110,7 @@ export default function Navigation() {
               onClick={() => handleNavClick("#pricing")}
               data-testid="button-mobile-get-started"
             >
-              Start Free Trial
+              Request Access
             </Button>
           </div>
         </div>
