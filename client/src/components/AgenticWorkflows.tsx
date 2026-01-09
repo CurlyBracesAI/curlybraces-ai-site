@@ -1,62 +1,63 @@
+import { Shield, Lock, Eye, FileCheck } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import snakeImage from "@assets/stock_images/snake_vertical_portr_38647f22.jpg";
 
 export default function AgenticWorkflows() {
-  const agents = [
+  const capabilities = [
     {
-      name: "Proposal Generator",
-      description: "Creates in-depth structured, branded proposals instantly from your CRM data.",
-      badge: "Available",
-      badgeColor: "bg-emerald-500 text-white",
-      cardBg: "bg-gradient-to-br from-emerald-500/25 to-teal-500/25"
+      name: "Inquiry Management",
+      description: "Handles website, email, directory, and referral inquiries.",
+      badge: "Core",
+      badgeColor: "bg-cyan-500 text-white",
+      cardBg: "bg-gradient-to-br from-cyan-500/20 to-blue-500/20"
     },
     {
-      name: "Follow-Up Agent",
-      description: "Automates personalized follow-up sequences based on deal stage and activity.",
-      badge: "Available",
+      name: "Pre-Intake Triage",
+      description: "Performs triage based on your practice's specific rules and criteria.",
+      badge: "Core",
+      badgeColor: "bg-cyan-500 text-white",
+      cardBg: "bg-gradient-to-br from-cyan-500/20 to-blue-500/20"
+    },
+    {
+      name: "Onboarding Follow-up",
+      description: "Manages follow-ups and recovery for patients who drop off during intake.",
+      badge: "Growth",
       badgeColor: "bg-blue-500 text-white",
-      cardBg: "bg-gradient-to-br from-blue-500/25 to-cyan-500/25"
+      cardBg: "bg-gradient-to-br from-blue-500/20 to-indigo-500/20"
     },
     {
-      name: "Triage Assistant",
-      description: "Summarizes daily activity, prioritizes leads, and generates performance reports.",
-      badge: "Available",
+      name: "Ethical Outreach",
+      description: "Supports thoughtful, capacity-aware outreach to maintain practice health.",
+      badge: "Ethics",
+      badgeColor: "bg-emerald-500 text-white",
+      cardBg: "bg-gradient-to-br from-emerald-500/20 to-teal-500/20"
+    },
+    {
+      name: "System Hand-offs",
+      description: "Prepares structured hand-offs to EHRs or Google-based workflows.",
+      badge: "Seamless",
       badgeColor: "bg-violet-500 text-white",
-      cardBg: "bg-gradient-to-br from-violet-500/25 to-purple-500/25"
-    },
-    {
-      name: "Data Enricher",
-      description: "Automatically completes missing contact and company information.",
-      badge: "Available",
-      badgeColor: "bg-orange-500 text-white",
-      cardBg: "bg-gradient-to-br from-orange-500/25 to-amber-500/25"
-    },
-    {
-      name: "Content Sync Agent",
-      description: "Maintains cross-platform consistency of client data and listings.",
-      badge: "Available",
-      badgeColor: "bg-pink-500 text-white",
-      cardBg: "bg-gradient-to-br from-pink-500/25 to-rose-500/25"
-    },
-    {
-      name: "Deal Notes Agent",
-      description: "Automatically generates and updates deal notes from communications.",
-      badge: "Available",
-      badgeColor: "bg-amber-500 text-white",
-      cardBg: "bg-gradient-to-br from-amber-500/25 to-yellow-500/25"
-    },
+      cardBg: "bg-gradient-to-br from-violet-500/20 to-purple-500/20"
+    }
+  ];
+
+  const limitations = [
+    "No clinical notes",
+    "No diagnosis or treatment records",
+    "No scheduling or billing",
+    "Never replaces professional judgment"
   ];
 
   return (
-    <section id="current-agents" className="py-12 md:py-24 px-6 bg-background">
+    <section id="meet-agent-g" className="py-12 md:py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-stretch gap-12">
           <div className="lg:w-1/2 flex items-stretch">
             <div className="w-full relative h-[600px] lg:h-auto">
               <img
                 src={snakeImage}
-                alt=""
+                alt="Agent G visual representative"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -68,38 +69,38 @@ export default function AgenticWorkflows() {
                 className="text-4xl md:text-5xl font-bold mb-6 max-w-2xl"
                 data-testid="text-workflows-title"
               >
-                Ready-to-Deploy<br />AI Agents
+                Meet Agent G
               </h2>
               <p
                 className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-12"
                 data-testid="text-workflows-subtitle"
               >
-                Each Rosie Agent is a purpose-built automation that installs directly into your platform. Choose the agents you need and start automating immediately:
+                Agent G handles the specialized workflows of mental health and wellness practices. It works quietly in the background to ensure every inquiry is met with a thoughtful, timely response.
               </p>
             </div>
 
-            <div className="space-y-6 mb-6">
-              {agents.map((agent, index) => (
+            <div className="space-y-4 mb-10">
+              {capabilities.map((item, index) => (
                 <Card
                   key={index}
-                  className={`hover-elevate transition-all duration-200 ${agent.cardBg}`}
+                  className={`hover-elevate transition-all duration-200 ${item.cardBg} border-0`}
                   data-testid={`card-agent-${index}`}
                 >
-                  <CardContent className="p-6">
+                  <CardContent className="p-5">
                     <div className="flex items-start gap-3">
                       <Badge 
-                        className={`${agent.badgeColor} shrink-0 no-default-hover-elevate no-default-active-elevate`}
+                        className={`${item.badgeColor} shrink-0 no-default-hover-elevate no-default-active-elevate`}
                         data-testid={`badge-agent-${index}`}
                       >
-                        {agent.badge}
+                        {item.badge}
                       </Badge>
                       <p
                         className="leading-relaxed"
                         data-testid={`text-agent-${index}`}
                       >
-                        <strong className="text-foreground">{agent.name}:</strong>{" "}
+                        <strong className="text-foreground">{item.name}:</strong>{" "}
                         <span className="text-muted-foreground">
-                          {agent.description}
+                          {item.description}
                         </span>
                       </p>
                     </div>
@@ -108,12 +109,17 @@ export default function AgenticWorkflows() {
               ))}
             </div>
 
-            <p
-              className="text-muted-foreground leading-relaxed max-w-md"
-              data-testid="text-workflows-footer"
-            >
-              New agents are added regularly. All agents work seamlessly with your existing integrations and subscription plan.
-            </p>
+            <div className="p-6 bg-card/30 rounded-lg border border-red-500/20">
+              <h3 className="text-sm font-semibold text-red-400 uppercase tracking-wider mb-4">What Agent G Does NOT Do</h3>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {limitations.map((limit, i) => (
+                  <li key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-red-500/50" />
+                    {limit}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>

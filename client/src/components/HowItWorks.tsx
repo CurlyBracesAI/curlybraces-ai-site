@@ -49,29 +49,29 @@ export default function HowItWorks() {
   const customizationAspects = [
     {
       icon: FileText,
-      title: "CRM Integration",
-      description: "Connects directly to Pipedrive, HubSpot, and more. Pull data automatically to power your automations.",
+      title: "EHR Integration",
+      description: "Connects to TherapyNotes, SimplePractice, and more. Pull data automatically to power your workflows.",
       iconBg: "bg-gradient-to-br from-orange-400 to-red-500",
       iconColor: "text-white"
     },
     {
       icon: Link2,
-      title: "Platform Connections",
-      description: "Works with Wix, Webflow, WordPress and other platforms. Sync data across your entire ecosystem.",
+      title: "Google Workspace",
+      description: "Works with HIPAA-compliant Gmail, Calendar, and Docs for lightweight, secure workflows.",
       iconBg: "bg-gradient-to-br from-cyan-400 to-blue-500",
       iconColor: "text-white"
     },
     {
       icon: ShieldCheck,
-      title: "Secure & Compliant",
-      description: "SOC2-based practices, encrypted data, and clear audit trails for every automation.",
+      title: "HIPAA-Eligible",
+      description: "Infrastructure designed for healthcare data security, privacy, and full audit trails.",
       iconBg: "bg-gradient-to-br from-green-400 to-emerald-500",
       iconColor: "text-white"
     },
     {
       icon: Sparkles,
-      title: "Simple Setup",
-      description: "Install, configure, and start automating in minutes. No engineering required.",
+      title: "Ethical Growth",
+      description: "Maintain trust and patient focus with capacity-aware automation that never over-promises.",
       iconBg: "bg-gradient-to-br from-fuchsia-400 to-pink-500",
       iconColor: "text-white"
     }
@@ -80,36 +80,36 @@ export default function HowItWorks() {
   const workflowSteps = [
     {
       icon: Eye,
-      step: "Data Collection",
-      description: "Pulls deal data from your CRM — open deals, last activity dates, deal values, and assigned owners.",
+      step: "Inquiry Capture",
+      description: "Pulls inquiry data from your website, email, or directories — capturing name, contact info, and initial needs.",
       iconBg: "bg-gradient-to-br from-blue-400 to-cyan-500",
       iconColor: "text-white"
     },
     {
       icon: Lightbulb,
-      step: "Analysis",
-      description: "Identifies stalled deals, overdue follow-ups, and high-priority opportunities based on your configured rules.",
+      step: "Initial Evaluation",
+      description: "Identifies patient fit and urgency based on your practice's specific rules and specialty.",
       iconBg: "bg-gradient-to-br from-amber-400 to-yellow-500",
       iconColor: "text-white"
     },
     {
       icon: ListChecks,
-      step: "Prioritization",
-      description: "Ranks deals by urgency and value, highlighting which need immediate attention.",
+      step: "Thoughtful Follow-up",
+      description: "Sends personalized, caring follow-ups to ensure the patient feels heard while gathering missing info.",
       iconBg: "bg-gradient-to-br from-violet-400 to-purple-500",
       iconColor: "text-white"
     },
     {
       icon: Play,
-      step: "Report Generation",
-      description: "Creates a formatted triage report with deal summaries, recommended actions, and key metrics.",
+      step: "Structured Hand-off",
+      description: "Prepares a clean, organized intake summary ready for your EHR or Google Workspace workflow.",
       iconBg: "bg-gradient-to-br from-emerald-400 to-green-500",
       iconColor: "text-white"
     },
     {
       icon: GraduationCap,
-      step: "Continuous Improvement",
-      description: "Learns from your deal outcomes to improve prioritization and recommendations over time.",
+      step: "Practice Insights",
+      description: "Helps you understand inquiry patterns and onboarding health to support ethical growth.",
       iconBg: "bg-gradient-to-br from-pink-400 to-rose-500",
       iconColor: "text-white"
     }
@@ -119,15 +119,15 @@ export default function HowItWorks() {
     <section id="how-it-works" className="py-12 md:py-24 px-6 bg-card">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center lg:text-left" data-testid="text-how-it-works-title">
-          How Rosie Agentic AI Works
+          How Agent G Works
         </h2>
         <p className="text-xl text-muted-foreground mb-16 text-center lg:text-left max-w-4xl" data-testid="text-how-it-works-subtitle">
-          An intelligent, Agentic AI workflow assistant uses autonomous agents to perform complex, multi-step business processes with minimal human oversight. These systems are highly flexible, able to adapt and learn from real-time data and changing conditions.
+          Agent G is built for practices where trust, fit, and thoughtful onboarding matter. It works quietly in the background to ensure every inquiry is met with a thoughtful, timely response.
         </p>
 
         <div className="mb-20">
           <h3 className="text-2xl md:text-3xl font-bold mb-10 text-center lg:text-left" data-testid="text-key-features-title">
-            Key Features of Agentic AI
+            Key Features of Agent G
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => {
@@ -153,10 +153,10 @@ export default function HowItWorks() {
 
         <div className="bg-background rounded-lg p-8 md:p-12">
           <h3 className="text-2xl md:text-3xl font-bold mb-6" data-testid="text-customization-title">
-            Built for Your Platform
+            Built for Your Practice
           </h3>
           <p className="text-lg text-muted-foreground mb-10 max-w-4xl" data-testid="text-customization-intro">
-            Rosie AI agents are designed to integrate seamlessly with your existing platforms. Connect your CRM, configure your preferences, and start automating in minutes — not months.
+            Agent G is designed to integrate seamlessly with your existing mental health workflows. Connect your EHR, configure your preferences, and start automating in minutes.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -187,10 +187,10 @@ export default function HowItWorks() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch flex flex-col gap-12">
             <div className="flex flex-col">
               <h3 className="text-2xl md:text-3xl font-bold mb-4" data-testid="text-example-title">
-                Example: Triage Assistant in Action
+                Agent G in Action
               </h3>
               <p className="text-muted-foreground mb-8" data-testid="text-example-intro">
-                See how the Triage Assistant agent automatically generates weekly project reports for a sales team:
+                See how Agent G handles a new patient inquiry from first contact to EHR hand-off:
               </p>
               
               <div className="space-y-4 flex-1">

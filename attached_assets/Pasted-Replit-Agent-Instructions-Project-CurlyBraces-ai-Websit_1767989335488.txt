@@ -1,0 +1,179 @@
+Replit Agent Instructions
+
+Project: CurlyBraces.ai Website Update
+Objective: Reposition the site around Agent G as an onboarding & marketing AI for mental health & wellness practices, without competing with EHRs.
+
+1. Core Positioning (DO NOT DEVIATE)
+
+CurlyBraces is not:
+
+an EHR
+
+a clinical documentation system
+
+a scheduling or billing platform
+
+CurlyBraces is:
+
+An AI platform delivering Agent G, focused on onboarding, triage, follow-up, and ethical practice growth for mental health & wellness providers.
+
+2. Homepage – Hero Section (REPLACE EXISTING)
+
+Headline (use one of these, pick the first unless layout forces change):
+
+AI for onboarding and growth in mental health & wellness practices
+
+Sub-headline:
+
+Agent G manages inquiries, triage, follow-ups, and onboarding so practitioners can focus on care, not admin.
+
+Supporting line (small text):
+
+Works with EHR systems or HIPAA-compliant Google-based workflows. No notes. No billing. No disruption.
+
+CTA:
+
+Primary: “Request early access”
+
+Secondary (optional): “See how Agent G works”
+
+3. One-paragraph Definition (ADD BELOW HERO)
+
+Agent G is an AI assistant built for mental health and wellness practices to handle the messy, time-consuming work that happens before a patient ever receives care. It manages inbound inquiries, evaluates fit, follows up thoughtfully, and prepares clean hand-offs to existing systems — without touching clinical notes, scheduling, or billing.
+
+4. Replace “AI Agents” Section with Agent G Focus
+
+Section title:
+
+Meet Agent G
+
+What Agent G does:
+
+Handles website, email, directory, and referral inquiries
+
+Performs pre-intake triage based on practice rules
+
+Manages onboarding follow-ups and drop-off recovery
+
+Supports ethical, capacity-aware outreach
+
+Prepares structured hand-offs to EHRs or Google-based workflows
+
+Explicitly state what it does NOT do (must be visible):
+
+No clinical notes
+
+No diagnosis or treatment records
+
+No scheduling or billing
+
+Never replaces professional judgment
+
+5. “Who It’s For” Section (REPLACE GENERIC USE CASES)
+
+Title:
+
+Built for mental health & wellness practices
+
+Include short bullets:
+
+Therapists & psychologists
+
+Group practices & clinics
+
+Acupuncturists
+
+Physical therapists
+
+Massage & bodywork practices
+
+Nutrition & integrative care providers
+
+Add one anchoring sentence:
+
+Designed for practices where trust, fit, and thoughtful onboarding matter.
+
+6. Integrations Section (REORDER + REFRAME)
+
+Change headline to:
+
+Works with your existing systems
+
+Two sub-groups:
+
+EHRs:
+
+TherapyNotes
+
+SimplePractice
+
+(label others as “and similar platforms”)
+
+Lightweight workflows:
+
+HIPAA-compliant Google Workspace (Docs, Calendar, Gmail)
+
+Supporting line:
+
+No migration. No retraining. Agent G fits into how you already work.
+
+7. Remove or De-emphasize
+
+Proposal Generator
+
+Sales / deal / pipeline language
+
+Generic “AI marketplace” framing
+
+If these remain in code, hide them from navigation and homepage.
+
+8. Compliance & Safety Section (KEEP CALM, NOT LEGAL)
+
+Ensure this is visible but not alarmist:
+
+HIPAA-eligible infrastructure
+
+Encrypted data
+
+Access controls
+
+Human-in-the-loop by default
+
+Agent G never provides clinical advice
+
+9. Tone & Style Rules
+
+Calm, confident, healthcare-adjacent
+
+No hype, no “disrupt healthcare” language
+
+Avoid startup buzzwords
+
+Trust > cleverness
+
+10. Non-goals (IMPORTANT)
+
+DO NOT:
+
+Add new features
+
+Invent clinical capabilities
+
+Expand into scheduling, notes, or billing
+
+Rebrand CurlyBraces entirely
+
+This is a positioning + copy update, not a rebuild.
+
+✅ Definition of Done
+
+Homepage clearly centers on Agent G
+
+Mental health & wellness audience is obvious within 5 seconds
+
+EHR competition risk is explicitly avoided
+
+Site feels narrower, calmer, and more intentional
+
+That’s it.
+If the Replit Agent still goes rogue after this, we demote it to intern.

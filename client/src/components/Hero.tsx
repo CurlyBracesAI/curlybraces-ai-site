@@ -24,13 +24,13 @@ export default function Hero() {
           <div className="relative">
             <h1 className="font-bold leading-tight mb-10 text-left" data-testid="text-hero-title">
               <span className="text-2xl md:text-3xl lg:text-4xl text-primary block mb-6">{"{"}curlybraces.ai{"}"}</span>
-              <span className="text-4xl md:text-5xl lg:text-6xl text-foreground block">AI Agents That Automate Your Proposals, Follow-Ups, and Reports</span>
+              <span className="text-4xl md:text-5xl lg:text-6xl text-foreground block">AI for onboarding and growth in mental health & wellness practices</span>
             </h1>
 
             <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed text-left" data-testid="text-hero-subtitle">
-              Ready-to-use automation for your CRM and web platforms. Fast setup. No engineering required.
+              Agent G manages inquiries, triage, follow-ups, and onboarding so practitioners can focus on care, not admin.
               <br /><br />
-              Powered by <strong className="text-foreground">Rosie</strong>, our AI agents handle proposals, follow-ups, triage reports, and data enrichment — so your team can focus on closing deals and growing your business.
+              <span className="text-sm">Works with EHR systems or HIPAA-compliant Google-based workflows. No notes. No billing. No disruption.</span>
             </p>
 
             <div className="flex flex-col sm:flex-row items-start gap-4">
@@ -40,22 +40,20 @@ export default function Hero() {
                 onClick={handleGetStarted}
                 data-testid="button-hero-cta"
               >
-                Start Free Trial
+                Request early access
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <a
-                href="https://rosie.curlybraces.ai"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#agent-g-definition"
               >
                 <Button
                   size="lg"
                   variant="outline"
                   className="text-base px-8 border-cyan-500/50 text-foreground hover:border-cyan-500 backdrop-blur-sm"
-                  data-testid="button-hero-rosie"
+                  data-testid="button-hero-how-it-works"
                 >
                   <Sparkles className="mr-2 h-4 w-4" />
-                  Try Rosie Assistant
+                  See how Agent G works
                 </Button>
               </a>
             </div>

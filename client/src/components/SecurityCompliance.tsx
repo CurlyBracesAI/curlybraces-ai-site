@@ -1,30 +1,30 @@
-import { Shield, Lock, FileCheck, Activity } from "lucide-react";
+import { Shield, Lock, Eye, FileCheck } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 export default function SecurityCompliance() {
   const securityFeatures = [
     {
       icon: Shield,
-      title: "Enterprise-Grade Security",
-      description: "AWS infrastructure with SOC 2 Type II, ISO 27001, and HIPAA-eligible services",
+      title: "HIPAA-Eligible",
+      description: "Infrastructure designed for healthcare data security and privacy.",
       iconBg: "bg-gradient-to-br from-cyan-400 to-blue-500",
     },
     {
       icon: Lock,
-      title: "Data Encryption",
-      description: "End-to-end encryption at rest and in transit for all data",
+      title: "Encrypted Data",
+      description: "AES-256 encryption at rest and TLS 1.3 in transit for all data.",
       iconBg: "bg-gradient-to-br from-blue-400 to-violet-500",
     },
     {
-      icon: FileCheck,
-      title: "Access Control",
-      description: "IAM-based access control with role-based permissions",
+      icon: Eye,
+      title: "Human-in-the-Loop",
+      description: "Agent G requires human review for high-stakes decisions by default.",
       iconBg: "bg-gradient-to-br from-violet-400 to-purple-500",
     },
     {
-      icon: Activity,
-      title: "Continuous Monitoring",
-      description: "24/7 logging and monitoring through AWS CloudTrail",
+      icon: FileCheck,
+      title: "Non-Clinical",
+      description: "Agent G never provides clinical advice or replaces judgment.",
       iconBg: "bg-gradient-to-br from-purple-400 to-pink-500",
     },
   ];
