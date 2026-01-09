@@ -12,7 +12,7 @@ export default function Footer() {
               {"{"}curlybraces.ai{"}"}
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed" data-testid="text-footer-tagline">
-              AI agents that automate your proposals, follow-ups, and reports. Plug-and-play for your CRM.
+              Ethical AI for onboarding and growth in mental health & wellness practices. Built for trust and precision.
             </p>
           </div>
 
@@ -21,29 +21,29 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <button
-                  onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => document.getElementById('who-its-for')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
                   data-testid="link-footer-features"
                 >
-                  Features
+                  Who It's For
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => document.getElementById('current-agents')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => document.getElementById('meet-agent-g')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
                   data-testid="link-footer-agents"
                 >
-                  AI Agents
+                  Agent G
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => document.getElementById('integrations')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors hover-elevate active-elevate-2 px-2 py-1 rounded-md -ml-2"
-                  data-testid="link-footer-pricing"
+                  data-testid="link-footer-integrations"
                 >
-                  Pricing
+                  Integrations
                 </button>
               </li>
               <li>

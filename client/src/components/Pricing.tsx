@@ -11,10 +11,10 @@ export default function Pricing() {
       period: "/mo",
       description: "Perfect for solo professionals getting started with AI automation",
       features: [
-        "AI proposal generator",
-        "Intake summaries",
-        "Automatic Deal Notes",
-        "Light usage included"
+        "Inquiry Management",
+        "Pre-Intake Triage",
+        "Onboarding Follow-up",
+        "EHR Hand-offs"
       ],
       cardBg: "bg-gradient-to-br from-blue-400/25 to-cyan-500/25",
       buttonVariant: "outline" as const
@@ -23,12 +23,12 @@ export default function Pricing() {
       name: "Core",
       price: "$29",
       period: "/mo",
-      description: "For growing teams who need advanced automation capabilities",
+      description: "For growing practices who need advanced capabilities",
       features: [
         "All Basic features",
-        "Multi-step automations",
-        "Agent chaining",
-        "Higher usage limits",
+        "Ethical Outreach Agent",
+        "Practice Insights",
+        "HIPAA-compliant workflows",
         "Priority support"
       ],
       cardBg: "bg-gradient-to-br from-violet-400/25 to-purple-500/25",
@@ -39,12 +39,11 @@ export default function Pricing() {
       name: "Team",
       price: "$49",
       period: "/user/mo",
-      description: "For full sales teams with high-volume automation needs",
+      description: "For group practices with high inquiry volume",
       features: [
         "All Core features",
-        "Usage-based billing",
-        "Team management",
-        "Custom integrations",
+        "Group management",
+        "Custom EHR workflows",
         "Dedicated support"
       ],
       cardBg: "bg-gradient-to-br from-emerald-400/25 to-teal-500/25",
@@ -53,10 +52,10 @@ export default function Pricing() {
   ];
 
   const addOns = [
-    { name: "Follow-Up Agent", description: "Automated follow-up sequences" },
-    { name: "Email Draft Agent", description: "AI-powered email drafting" },
-    { name: "Triage Agent", description: "Intelligent lead prioritization" },
-    { name: "Data Enrichment Agent", description: "Automatic data completion" }
+    { name: "Additional EHR Sync", description: "Sync with secondary systems" },
+    { name: "Custom Triage Rules", description: "Advanced practice-specific logic" },
+    { name: "Recall Agent", description: "Ethical patient recall workflows" },
+    { name: "Data Import", description: "Migration from existing systems" }
   ];
 
   return (
@@ -67,7 +66,7 @@ export default function Pricing() {
             Simple, Transparent Pricing
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-pricing-subtitle">
-            Start free, upgrade as you grow. No hidden fees, no long-term contracts.
+            Choose the plan that fits your practice's inquiry volume and growth goals.
           </p>
         </div>
 
@@ -111,7 +110,7 @@ export default function Pricing() {
                   variant={plan.buttonVariant}
                   data-testid={`button-pricing-${plan.name.toLowerCase()}`}
                 >
-                  Start Free Trial
+                  Request Access
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </CardContent>
@@ -124,7 +123,7 @@ export default function Pricing() {
             Optional Add-Ons
           </h3>
           <p className="text-center text-muted-foreground mb-8">
-            Extend your automation capabilities with specialized agents
+            Extend Agent G's capabilities for your specific practice needs
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {addOns.map((addon, index) => (
