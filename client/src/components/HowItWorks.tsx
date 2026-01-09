@@ -116,7 +116,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="how-it-works" className="py-12 md:py-24 px-6 bg-background">
+    <section id="how-it-works" className="py-12 md:py-24 px-6 bg-card border-t border-border/10">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center lg:text-left" data-testid="text-how-it-works-title">
           How Agent G Works
