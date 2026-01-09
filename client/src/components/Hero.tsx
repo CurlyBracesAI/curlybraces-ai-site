@@ -24,11 +24,11 @@ export default function Hero() {
           <div className="relative">
             <h1 className="font-bold leading-tight mb-10 text-left" data-testid="text-hero-title">
               <span className="text-2xl md:text-3xl lg:text-4xl text-primary block mb-6">{"{"}curlybraces.ai{"}"}</span>
-              <span className="text-4xl md:text-5xl lg:text-6xl text-foreground block">AI for onboarding and growth in mental health & wellness practices</span>
+              <span className="text-4xl md:text-5xl lg:text-6xl text-foreground block">Introducing Rosie: AI onboarding and growth for mental health & wellness practices</span>
             </h1>
 
             <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed text-left" data-testid="text-hero-subtitle">
-              Agent G manages inquiries, triage, follow-ups, and onboarding so practitioners can focus on care, not admin.
+              Rosie Agent G manages inquiries, triage, follow-ups, and onboarding so practitioners can focus on care, not admin.
               <br /><br />
               <span className="text-sm">Works with EHR systems or HIPAA-compliant Google-based workflows. No notes. No billing. No disruption.</span>
             </p>
