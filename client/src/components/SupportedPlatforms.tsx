@@ -1,7 +1,9 @@
 export default function SupportedPlatforms() {
   const ehrPlatforms = [
     { name: "TherapyNotes", logo: "https://cdn.brandfetch.io/therapynotes.com/logo?format=svg&width=200" },
-    { name: "SimplePractice", logo: "https://cdn.brandfetch.io/simplepractice.com/logo?format=svg&width=200" }
+    { name: "SimplePractice", logo: "https://cdn.brandfetch.io/simplepractice.com/logo?format=svg&width=200" },
+    { name: "TheraNest", logo: "" },
+    { name: "Jane", logo: "" }
   ];
 
   const workflowPlatforms = [
