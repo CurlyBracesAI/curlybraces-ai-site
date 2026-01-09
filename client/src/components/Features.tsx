@@ -1,6 +1,6 @@
 import { Users, Building2, Zap, Activity, Heart, Sparkles } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import cuttlefishImage from "@assets/stock_images/cuttlefish_camouflag_774f53ef.jpg";
+import wellnessImage from "@assets/stock_images/modern_healthcare_pr_4a4a2108.jpg";
 
 export default function Features() {
   const categories = [
@@ -16,11 +16,11 @@ export default function Features() {
     <section id="who-its-for" className="relative py-12 md:py-24 px-6 overflow-hidden bg-background border-t border-border/10">
       <div className="max-w-7xl mx-auto">
         <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center flex flex-col gap-12 mb-16">
-          <div className="relative aspect-square rounded-xl overflow-hidden border border-border bg-background flex items-center justify-center p-8">
+          <div className="relative aspect-square rounded-xl overflow-hidden border border-border bg-background">
             <img 
-              src={cuttlefishImage} 
-              alt="Adaptive automation for wellness practices" 
-              className="w-full h-full object-contain"
+              src={wellnessImage} 
+              alt="Serene mental health and wellness practice environment" 
+              className="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-500"
             />
           </div>
           

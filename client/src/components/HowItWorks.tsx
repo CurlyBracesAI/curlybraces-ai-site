@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Brain, Cog, Database, RefreshCw, Shield, FileText, Link2, ShieldCheck, Sparkles, Eye, Lightbulb, ListChecks, Play, GraduationCap } from "lucide-react";
-import octopusImage from "@assets/stock_images/octopus_camouflage_u_e249e7d1.jpg";
+import clinicalImage from "@assets/stock_images/modern_healthcare_pr_cad7a57c.jpg";
 
 export default function HowItWorks() {
   const features = [
@@ -155,9 +155,9 @@ export default function HowItWorks() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center flex flex-col gap-12">
             <div className="relative aspect-square rounded-xl overflow-hidden border border-border">
               <img 
-                src={octopusImage} 
-                alt="Adaptive mental health automation" 
-                className="w-full h-full object-cover"
+                src={clinicalImage} 
+                alt="Modern clinical workspace with technology integration" 
+                className="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-500"
               />
             </div>
             
@@ -205,7 +205,7 @@ export default function HowItWorks() {
                 See how Agent G handles a new patient inquiry from first contact to EHR hand-off:
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                 {workflowSteps.map((step, index) => {
                   const Icon = step.icon;
                   return (
@@ -226,6 +226,17 @@ export default function HowItWorks() {
                     </div>
                   );
                 })}
+              </div>
+
+              <div className="flex items-center justify-center bg-background rounded-xl border border-border aspect-video overflow-hidden relative max-w-4xl mx-auto w-full">
+                <img 
+                  src={clinicalImage} 
+                  alt="Healthcare workflow visualization" 
+                  className="w-full h-full object-cover opacity-40 grayscale"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Brain className="w-24 h-24 text-cyan-400/40" />
+                </div>
               </div>
             </div>
           </div>
