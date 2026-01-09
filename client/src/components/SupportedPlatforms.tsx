@@ -40,7 +40,7 @@ export default function SupportedPlatforms() {
               {ehrPlatforms.map((platform, index) => (
                 <LogoCard key={index} name={platform.name} />
               ))}
-              <span className="text-muted-foreground text-[10px] font-medium">and similar platforms</span>
+              <span className="text-muted-foreground text-sm font-medium">and similar platforms</span>
             </div>
           </div>
 
@@ -54,7 +54,7 @@ export default function SupportedPlatforms() {
                 <LogoCard key={index} name={platform.name} />
               ))}
             </div>
-            <p className="text-[9px] text-muted-foreground text-center mt-1 italic opacity-70">
+            <p className="text-sm text-muted-foreground text-center mt-1 italic opacity-70">
               HIPAA-compliant Google Workspace (Docs, Calendar, Gmail)
             </p>
           </div>
