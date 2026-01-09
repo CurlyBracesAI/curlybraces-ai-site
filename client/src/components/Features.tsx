@@ -28,7 +28,7 @@ export default function Features() {
           
           <div className="lg:w-1/2 flex flex-col justify-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-left" data-testid="text-features-title">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-left" data-testid="text-features-title">
                 Built for mental health & wellness practices
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed text-left mb-6 italic" data-testid="text-features-subtitle">

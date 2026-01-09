@@ -66,7 +66,7 @@ export default function AgenticWorkflows() {
           <div className="lg:w-1/2 flex flex-col">
             <div>
               <h2
-                className="text-4xl md:text-5xl font-bold mb-6 max-w-2xl"
+                className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 max-w-2xl"
                 data-testid="text-workflows-title"
               >
                 Meet Rosie Agent G

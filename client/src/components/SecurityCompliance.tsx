@@ -33,7 +33,7 @@ export default function SecurityCompliance() {
     <section id="security" className="pt-24 pb-0 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-security-title">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4" data-testid="text-security-title">
             Security & Compliance
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto" data-testid="text-security-subtitle">

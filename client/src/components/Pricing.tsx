@@ -62,7 +62,7 @@ export default function Pricing() {
     <section id="pricing" className="py-12 md:py-24 px-6 bg-card">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-pricing-title">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6" data-testid="text-pricing-title">
             Simple, Transparent Pricing
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-pricing-subtitle">
