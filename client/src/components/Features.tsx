@@ -1,6 +1,6 @@
 import { Users, Building2, Zap, Activity, Heart, Sparkles } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import wellnessImage from "@assets/stock_images/modern_healthcare_pr_4a4a2108.jpg";
+import generatedAiBrain from "@assets/generated_images/abstract_ai_brain_glowing_cyan.png";
 
 export default function Features() {
   const categories = [
@@ -18,9 +18,9 @@ export default function Features() {
         <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center flex flex-col gap-12 mb-16">
           <div className="relative aspect-square rounded-xl overflow-hidden border border-border bg-background">
             <img 
-              src={wellnessImage} 
-              alt="Serene mental health and wellness practice environment" 
-              className="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-500"
+              src={generatedAiBrain} 
+              alt="AI Mind Visualization" 
+              className="w-full h-full object-cover brightness-90 hover:brightness-110 transition-all duration-500"
             />
           </div>
           

@@ -2,7 +2,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import NeuralBackground from "./NeuralBackground";
-import clinicalImage from "@assets/stock_images/modern_healthcare_pr_cad7a57c.jpg";
+import generatedHeroImage from "@assets/generated_images/abstract_neural_network_glowing_lines.png";
 
 export default function Hero() {
   const handleGetStarted = () => {
@@ -63,9 +63,9 @@ export default function Hero() {
             
             <div className="absolute left-full top-[calc(3rem+1.5rem)] bottom-0 w-[500px] pointer-events-none z-0 hidden lg:block ml-12 overflow-hidden rounded-xl border border-border">
               <img 
-                src={clinicalImage} 
+                src={generatedHeroImage} 
                 alt="" 
-                className="w-full h-full object-cover grayscale brightness-50"
+                className="w-full h-full object-cover brightness-75"
               />
             </div>
           </div>

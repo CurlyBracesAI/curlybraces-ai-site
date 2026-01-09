@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Brain, Cog, Database, RefreshCw, Shield, FileText, Link2, ShieldCheck, Sparkles, Eye, Lightbulb, ListChecks, Play, GraduationCap } from "lucide-react";
-import clinicalImage from "@assets/stock_images/modern_healthcare_pr_cad7a57c.jpg";
+import generatedDataFlow from "@assets/generated_images/abstract_data_flow_cyan_lines.png";
 
 export default function HowItWorks() {
   const features = [
@@ -155,9 +155,9 @@ export default function HowItWorks() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center flex flex-col gap-12">
             <div className="relative aspect-square rounded-xl overflow-hidden border border-border">
               <img 
-                src={clinicalImage} 
-                alt="Modern clinical workspace with technology integration" 
-                className="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-500"
+                src={generatedDataFlow} 
+                alt="AI Data Flow" 
+                className="w-full h-full object-cover brightness-90 hover:brightness-110 transition-all duration-500"
               />
             </div>
             
@@ -230,9 +230,9 @@ export default function HowItWorks() {
 
               <div className="flex items-center justify-center bg-background rounded-xl border border-border aspect-video overflow-hidden relative max-w-4xl mx-auto w-full">
                 <img 
-                  src={clinicalImage} 
-                  alt="Healthcare workflow visualization" 
-                  className="w-full h-full object-cover opacity-40 grayscale"
+                  src={generatedDataFlow} 
+                  alt="AI Data Flow visualization" 
+                  className="w-full h-full object-cover opacity-50 brightness-75"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <Brain className="w-24 h-24 text-cyan-400/40" />
