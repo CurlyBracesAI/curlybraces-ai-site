@@ -2,7 +2,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import NeuralBackground from "./NeuralBackground";
-import arcticFoxImage from "@assets/stock_images/arctic_fox_winter_wh_2ef11a3d.jpg";
+import clinicalImage from "@assets/stock_images/modern_healthcare_pr_cad7a57c.jpg";
 
 export default function Hero() {
   const handleGetStarted = () => {
@@ -24,7 +24,7 @@ export default function Hero() {
           <div className="relative">
             <h1 className="font-bold leading-[1.1] mb-10 text-left" data-testid="text-hero-title">
               <span className="text-lg md:text-xl lg:text-2xl text-primary block mb-6">{"{"}curlybraces.ai{"}"}</span>
-              <span className="text-2xl md:text-3xl lg:text-4xl text-foreground block">Introducing Rosie: AI onboarding and growth for mental health & wellness practices</span>
+              <span className="text-2xl md:text-3xl lg:text-4xl text-foreground block">Introducing Rosie: Our AI Agent for Onboarding and Growth in Mental Health & Wellness Practices</span>
             </h1>
 
             <p className="text-base md:text-lg text-muted-foreground mb-8 leading-[1.4] text-left" data-testid="text-hero-subtitle">
@@ -61,11 +61,11 @@ export default function Hero() {
               Rosie is CurlyBraces’ AI system. Rosie Agent G is its first agent, focused on onboarding and growth for mental health and wellness practices.
             </p>
             
-            <div className="absolute left-full top-[calc(3rem+1.5rem)] bottom-0 w-[500px] pointer-events-none z-0 hidden lg:block ml-12">
+            <div className="absolute left-full top-[calc(3rem+1.5rem)] bottom-0 w-[500px] pointer-events-none z-0 hidden lg:block ml-12 overflow-hidden rounded-xl border border-border">
               <img 
-                src={arcticFoxImage} 
+                src={clinicalImage} 
                 alt="" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover grayscale brightness-50"
               />
             </div>
           </div>
