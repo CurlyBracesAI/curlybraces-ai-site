@@ -33,7 +33,7 @@ export default function Hero() {
               <span className="text-sm">Works with EHR systems or HIPAA-compliant Google-based workflows. No notes. No billing. No disruption.</span>
             </p>
 
-            <div className="flex flex-col sm:flex-row items-start gap-4">
+            <div className="flex flex-col sm:flex-row items-start gap-4 mb-6">
               <Button
                 size="lg"
                 className="text-base px-8 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white border-0 no-default-hover-elevate"
@@ -57,6 +57,9 @@ export default function Hero() {
                 </Button>
               </a>
             </div>
+            <p className="text-xs text-muted-foreground">
+              Rosie is CurlyBraces’ AI system. Rosie Agent G is its first agent, focused on onboarding and growth for mental health and wellness practices.
+            </p>
             
             <div className="absolute left-full top-[calc(3rem+1.5rem)] bottom-0 w-[500px] pointer-events-none z-0 hidden lg:block ml-12">
               <img 

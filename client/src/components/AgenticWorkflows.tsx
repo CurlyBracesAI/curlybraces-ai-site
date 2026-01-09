@@ -69,7 +69,7 @@ export default function AgenticWorkflows() {
                 className="text-4xl md:text-5xl font-bold mb-6 max-w-2xl"
                 data-testid="text-workflows-title"
               >
-                Meet Agent G
+                Meet Rosie Agent G
               </h2>
               <p
                 className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-12"

@@ -12,7 +12,7 @@ export default function Footer() {
               {"{"}curlybraces.ai{"}"}
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed" data-testid="text-footer-tagline">
-              Ethical AI for onboarding and growth in mental health & wellness practices. Built for trust and precision.
+              CurlyBraces builds Rosie, an AI system designed to support specialized agents for real-world professional workflows.
             </p>
           </div>
 

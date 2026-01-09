@@ -19,7 +19,7 @@ export default function Home() {
         <section id="agent-g-definition" className="py-12 bg-background border-y border-card/20">
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-xl md:text-2xl text-foreground text-center leading-relaxed italic">
-              Agent G is an AI assistant built for mental health and wellness practices to handle the messy, time-consuming work that happens before a patient ever receives care. It manages inbound inquiries, evaluates fit, follows up thoughtfully, and prepares clean hand-offs to existing systems — without touching clinical notes, scheduling, or billing.
+              Rosie Agent G is an AI assistant built for mental health and wellness practices to handle the messy, time-consuming work that happens before a patient ever receives care. It manages inbound inquiries, evaluates fit, follows up thoughtfully, and prepares clean hand-offs to existing systems — without touching clinical notes, scheduling, or billing.
             </p>
           </div>
         </section>
