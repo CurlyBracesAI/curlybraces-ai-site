@@ -13,7 +13,7 @@ export default function Features() {
   ];
 
   return (
-    <section id="who-its-for" className="relative py-12 md:py-24 px-6 overflow-hidden bg-background">
+    <section id="who-its-for" className="relative py-12 md:py-24 px-6 overflow-hidden bg-background border-t border-border/10">
       <div className="max-w-7xl mx-auto">
         <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center flex flex-col gap-12 mb-16">
           <div className="relative aspect-square rounded-xl overflow-hidden border border-border bg-background flex items-center justify-center p-8">
