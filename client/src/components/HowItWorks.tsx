@@ -152,40 +152,52 @@ export default function HowItWorks() {
         </div>
 
         <div className="bg-card/30 rounded-xl p-8 md:p-12 border border-border">
-          <h3 className="text-xl md:text-2xl font-bold mb-4" data-testid="text-customization-title">
-            Built for Your Practice
-          </h3>
-          <p className="text-lg text-muted-foreground mb-10 max-w-4xl leading-relaxed" data-testid="text-customization-intro">
-            Agent G is designed to integrate seamlessly with your existing mental health workflows. Connect your EHR, configure your preferences, and start automating in minutes.
-          </p>
+          <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center flex flex-col gap-12">
+            <div className="relative aspect-square rounded-xl overflow-hidden border border-border">
+              <img 
+                src={octopusImage} 
+                alt="Adaptive mental health automation" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            
+            <div className="flex flex-col">
+              <h3 className="text-xl md:text-2xl font-bold mb-4" data-testid="text-customization-title">
+                Built for Your Practice
+              </h3>
+              <p className="text-lg text-muted-foreground mb-10 leading-relaxed" data-testid="text-customization-intro">
+                Agent G is designed to integrate seamlessly with your existing mental health workflows. Connect your EHR, configure your preferences, and start automating in minutes.
+              </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {customizationAspects.map((aspect, index) => {
-              const Icon = aspect.icon;
-              return (
-                <div key={index} className="flex gap-4" data-testid={`item-customization-${index}`}>
-                  <div className="flex-shrink-0">
-                    <div className={`w-10 h-10 rounded-lg ${aspect.iconBg} flex items-center justify-center bg-opacity-10`}>
-                      <Icon className="w-5 h-5 text-foreground" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {customizationAspects.map((aspect, index) => {
+                  const Icon = aspect.icon;
+                  return (
+                    <div key={index} className="flex gap-4" data-testid={`item-customization-${index}`}>
+                      <div className="flex-shrink-0">
+                        <div className={`w-10 h-10 rounded-lg ${aspect.iconBg} flex items-center justify-center bg-opacity-10`}>
+                          <Icon className="w-5 h-5 text-foreground" />
+                        </div>
+                      </div>
+                      <div>
+                        <h4 className="text-base font-bold mb-2" data-testid={`text-customization-aspect-title-${index}`}>
+                          {aspect.title}
+                        </h4>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          {aspect.description}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <h4 className="text-base font-bold mb-2" data-testid={`text-customization-aspect-title-${index}`}>
-                      {aspect.title}
-                    </h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {aspect.description}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
 
         <div className="mt-20">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center flex flex-col gap-12">
-            <div className="flex flex-col">
+          <div className="flex flex-col gap-12">
+            <div className="flex flex-col max-w-4xl mx-auto text-center lg:text-left">
               <h3 className="text-xl md:text-2xl font-bold mb-4" data-testid="text-example-title">
                 Agent G in Action
               </h3>
@@ -193,7 +205,7 @@ export default function HowItWorks() {
                 See how Agent G handles a new patient inquiry from first contact to EHR hand-off:
               </p>
               
-              <div className="space-y-6 flex-1">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {workflowSteps.map((step, index) => {
                   const Icon = step.icon;
                   return (
@@ -214,16 +226,6 @@ export default function HowItWorks() {
                     </div>
                   );
                 })}
-              </div>
-            </div>
-
-            <div className="flex items-center justify-center">
-              <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-border">
-                <img 
-                  src={octopusImage} 
-                  alt="" 
-                  className="w-full h-full object-cover"
-                />
               </div>
             </div>
           </div>
