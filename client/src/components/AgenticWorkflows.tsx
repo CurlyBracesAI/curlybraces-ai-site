@@ -9,21 +9,21 @@ export default function AgenticWorkflows() {
       name: "Inquiry Management",
       description: "Handles website, email, and directory inquiries.",
       badge: "Core",
-      badgeColor: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
+      badgeColor: "bg-pink-500/10 text-pink-400 border-pink-500/20",
       cardBg: "bg-background"
     },
     {
       name: "Pre-Intake Triage",
       description: "Performs triage based on your practice's specific rules.",
       badge: "Core",
-      badgeColor: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
+      badgeColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
       cardBg: "bg-background"
     },
     {
       name: "Onboarding Follow-up",
       description: "Manages follow-ups for patients during intake.",
       badge: "Growth",
-      badgeColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+      badgeColor: "bg-amber-500/10 text-amber-400 border-amber-500/20",
       cardBg: "bg-background"
     },
     {

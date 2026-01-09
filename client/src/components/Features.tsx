@@ -4,12 +4,12 @@ import generatedAiBrain from "@assets/generated_images/abstract_ai_brain_glowing
 
 export default function Features() {
   const categories = [
-    { title: "Therapists & Psychologists", icon: Users },
-    { title: "Group Practices & Clinics", icon: Building2 },
-    { title: "Acupuncturists", icon: Zap },
-    { title: "Physical Therapists", icon: Activity },
-    { title: "Massage & Bodywork Practices", icon: Heart },
-    { title: "Nutrition & Integrative Care", icon: Sparkles }
+    { title: "Therapists & Psychologists", icon: Users, bg: "bg-pink-500/10", color: "text-pink-400" },
+    { title: "Group Practices & Clinics", icon: Building2, bg: "bg-blue-500/10", color: "text-blue-400" },
+    { title: "Acupuncturists", icon: Zap, bg: "bg-amber-500/10", color: "text-amber-400" },
+    { title: "Physical Therapists", icon: Activity, bg: "bg-emerald-500/10", color: "text-emerald-400" },
+    { title: "Massage & Bodywork Practices", icon: Heart, bg: "bg-rose-500/10", color: "text-rose-400" },
+    { title: "Nutrition & Integrative Care", icon: Sparkles, bg: "bg-violet-500/10", color: "text-violet-400" }
   ];
 
   return (
@@ -36,9 +36,9 @@ export default function Features() {
               {categories.map((category, index) => {
                 const Icon = category.icon;
                 return (
-                  <div key={index} className="flex items-center gap-3 p-4 rounded-lg bg-background border border-border hover-elevate transition-all duration-300">
-                    <div className="w-8 h-8 rounded-full bg-cyan-500/10 flex items-center justify-center shrink-0">
-                      <Icon className="w-4 h-4 text-cyan-400" />
+                  <div key={index} className="flex items-center gap-3 p-4 rounded-lg bg-card/30 border border-border hover-elevate transition-all duration-300">
+                    <div className={`w-8 h-8 rounded-full ${category.bg} flex items-center justify-center shrink-0`}>
+                      <Icon className={`w-4 h-4 ${category.color}`} />
                     </div>
                     <h3 className="text-sm font-medium text-foreground">{category.title}</h3>
                   </div>
