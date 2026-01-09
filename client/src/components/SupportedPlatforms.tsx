@@ -10,17 +10,9 @@ export default function SupportedPlatforms() {
     { name: "Gmail", logo: "https://cdn.brandfetch.io/google.com/logo?format=svg&width=200" }
   ];
 
-  const LogoCard = ({ name, logo }: { name: string; logo: string }) => (
-    <div className="flex flex-col items-center gap-2 p-1">
-      <div className="w-40 h-40 flex items-center justify-center bg-white rounded-md p-2 hover:shadow-md transition-shadow">
-        <img 
-          src={logo} 
-          alt={name}
-          className="max-w-full max-h-full"
-          data-testid={`logo-${name.toLowerCase()}`}
-        />
-      </div>
-      <span className="text-xs text-muted-foreground font-medium text-center">{name}</span>
+  const LogoCard = ({ name }: { name: string }) => (
+    <div className="flex items-center justify-center h-12">
+      <span className="text-lg font-bold text-foreground opacity-90">{name}</span>
     </div>
   );
 
@@ -28,7 +20,7 @@ export default function SupportedPlatforms() {
     <section id="integrations" className="py-16 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="text-platforms-title">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4" data-testid="text-platforms-title">
             Works with your existing systems
           </h2>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto" data-testid="text-platforms-subtitle">
@@ -39,30 +31,28 @@ export default function SupportedPlatforms() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* EHRs */}
           <div className="bg-card/30 p-8 rounded-2xl border border-card/50">
-            <h3 className="text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-6 text-center">
+            <h3 className="text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-8 text-center">
               EHR Platforms
             </h3>
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex flex-wrap gap-x-12 gap-y-8 justify-center items-center">
               {ehrPlatforms.map((platform, index) => (
-                <LogoCard key={index} name={platform.name} logo={platform.logo} />
+                <LogoCard key={index} name={platform.name} />
               ))}
-              <div className="flex flex-col items-center justify-center p-1 w-40 h-40">
-                <span className="text-muted-foreground text-sm font-medium text-center">and similar platforms</span>
-              </div>
+              <span className="text-muted-foreground text-sm font-medium">and similar platforms</span>
             </div>
           </div>
 
           {/* Lightweight Workflows */}
-          <div className="bg-card/30 p-8 rounded-2xl border border-card/50">
-            <h3 className="text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-6 text-center">
+          <div className="bg-card/30 p-8 rounded-2xl border border-card/50 flex flex-col">
+            <h3 className="text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-8 text-center">
               Lightweight Workflows
             </h3>
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex flex-wrap gap-x-12 gap-y-8 justify-center items-center flex-1">
               {workflowPlatforms.map((platform, index) => (
-                <LogoCard key={index} name={platform.name} logo={platform.logo} />
+                <LogoCard key={index} name={platform.name} />
               ))}
             </div>
-            <p className="text-xs text-muted-foreground text-center mt-4 italic">
+            <p className="text-xs text-muted-foreground text-center mt-6 italic">
               HIPAA-compliant Google Workspace (Docs, Calendar, Gmail)
             </p>
           </div>
