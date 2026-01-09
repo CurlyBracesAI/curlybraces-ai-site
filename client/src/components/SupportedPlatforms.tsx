@@ -21,11 +21,11 @@ export default function SupportedPlatforms() {
   return (
     <section id="integrations" className="py-4 pb-20 md:pb-32 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-4">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-1" data-testid="text-platforms-title">
+        <div className="text-center mb-10">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-3" data-testid="text-platforms-title">
             Works with your existing systems
           </h2>
-          <p className="text-sm text-muted-foreground max-w-2xl mx-auto leading-tight" data-testid="text-platforms-subtitle">
+          <p className="text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed" data-testid="text-platforms-subtitle">
             No migration. No retraining. Agent G fits into how you already work.
           </p>
         </div>
