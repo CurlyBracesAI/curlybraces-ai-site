@@ -116,29 +116,29 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="how-it-works" className="py-12 md:py-24 px-6 bg-card">
+    <section id="how-it-works" className="py-12 md:py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center lg:text-left" data-testid="text-how-it-works-title">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center lg:text-left" data-testid="text-how-it-works-title">
           How Agent G Works
         </h2>
-        <p className="text-xl text-muted-foreground mb-16 text-center lg:text-left max-w-4xl" data-testid="text-how-it-works-subtitle">
+        <p className="text-lg text-muted-foreground mb-16 text-center lg:text-left max-w-4xl leading-relaxed" data-testid="text-how-it-works-subtitle">
           Agent G is built for practices where trust, fit, and thoughtful onboarding matter. It works quietly in the background to ensure every inquiry is met with a thoughtful, timely response.
         </p>
 
         <div className="mb-20">
-          <h3 className="text-2xl md:text-3xl font-bold mb-10 text-center lg:text-left" data-testid="text-key-features-title">
+          <h3 className="text-xl md:text-2xl font-bold mb-10 text-center lg:text-left" data-testid="text-key-features-title">
             Key Features of Agent G
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
-                <Card key={index} className={`hover-elevate transition-all duration-200 ${feature.cardBg}`} data-testid={`card-feature-${index}`}>
+                <Card key={index} className="hover-elevate transition-all duration-300 border-border bg-card/30" data-testid={`card-feature-${index}`}>
                   <CardContent className="p-6">
-                    <div className={`w-12 h-12 rounded-lg ${feature.iconBg} flex items-center justify-center mb-4`}>
-                      <Icon className={`w-6 h-6 ${feature.iconColor}`} />
+                    <div className={`w-10 h-10 rounded-lg ${feature.iconBg} flex items-center justify-center mb-5 bg-opacity-10`}>
+                      <Icon className="w-5 h-5 text-foreground" />
                     </div>
-                    <h4 className="text-lg font-semibold mb-3" data-testid={`text-feature-title-${index}`}>
+                    <h4 className="text-base font-bold mb-3" data-testid={`text-feature-title-${index}`}>
                       {feature.title}
                     </h4>
                     <p className="text-muted-foreground text-sm leading-relaxed" data-testid={`text-feature-description-${index}`}>
@@ -151,29 +151,29 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        <div className="bg-background rounded-lg p-8 md:p-12">
-          <h3 className="text-2xl md:text-3xl font-bold mb-6" data-testid="text-customization-title">
+        <div className="bg-card/30 rounded-xl p-8 md:p-12 border border-border">
+          <h3 className="text-xl md:text-2xl font-bold mb-4" data-testid="text-customization-title">
             Built for Your Practice
           </h3>
-          <p className="text-lg text-muted-foreground mb-10 max-w-4xl" data-testid="text-customization-intro">
+          <p className="text-lg text-muted-foreground mb-10 max-w-4xl leading-relaxed" data-testid="text-customization-intro">
             Agent G is designed to integrate seamlessly with your existing mental health workflows. Connect your EHR, configure your preferences, and start automating in minutes.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {customizationAspects.map((aspect, index) => {
               const Icon = aspect.icon;
               return (
                 <div key={index} className="flex gap-4" data-testid={`item-customization-${index}`}>
                   <div className="flex-shrink-0">
-                    <div className={`w-10 h-10 rounded-lg ${aspect.iconBg} flex items-center justify-center`}>
-                      <Icon className={`w-5 h-5 ${aspect.iconColor}`} />
+                    <div className={`w-10 h-10 rounded-lg ${aspect.iconBg} flex items-center justify-center bg-opacity-10`}>
+                      <Icon className="w-5 h-5 text-foreground" />
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold mb-2" data-testid={`text-customization-aspect-title-${index}`}>
+                    <h4 className="text-base font-bold mb-2" data-testid={`text-customization-aspect-title-${index}`}>
                       {aspect.title}
                     </h4>
-                    <p className="text-muted-foreground leading-relaxed" data-testid={`text-customization-aspect-description-${index}`}>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
                       {aspect.description}
                     </p>
                   </div>
@@ -184,28 +184,28 @@ export default function HowItWorks() {
         </div>
 
         <div className="mt-20">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch flex flex-col gap-12">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center flex flex-col gap-12">
             <div className="flex flex-col">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4" data-testid="text-example-title">
+              <h3 className="text-xl md:text-2xl font-bold mb-4" data-testid="text-example-title">
                 Agent G in Action
               </h3>
-              <p className="text-muted-foreground mb-8" data-testid="text-example-intro">
+              <p className="text-muted-foreground mb-10 leading-relaxed" data-testid="text-example-intro">
                 See how Agent G handles a new patient inquiry from first contact to EHR hand-off:
               </p>
               
-              <div className="space-y-4 flex-1">
+              <div className="space-y-6 flex-1">
                 {workflowSteps.map((step, index) => {
                   const Icon = step.icon;
                   return (
-                    <div key={index} className="flex gap-3" data-testid={`item-example-step-${index}`}>
+                    <div key={index} className="flex gap-4" data-testid={`item-example-step-${index}`}>
                       <div className="flex-shrink-0">
-                        <div className={`w-10 h-10 rounded-lg ${step.iconBg} flex items-center justify-center`}>
-                          <Icon className={`w-5 h-5 ${step.iconColor}`} />
+                        <div className={`w-10 h-10 rounded-lg ${step.iconBg} flex items-center justify-center bg-opacity-10`}>
+                          <Icon className="w-5 h-5 text-foreground" />
                         </div>
                       </div>
                       <div className="flex-1">
                         <div className="flex items-baseline gap-2 mb-1">
-                          <h4 className="text-base font-semibold text-foreground">{step.step}:</h4>
+                          <h4 className="text-sm font-bold text-foreground uppercase tracking-wider">{step.step}</h4>
                         </div>
                         <p className="text-sm text-muted-foreground leading-relaxed">
                           {step.description}
@@ -217,12 +217,14 @@ export default function HowItWorks() {
               </div>
             </div>
 
-            <div className="flex items-stretch">
-              <img 
-                src={octopusImage} 
-                alt="" 
-                className="w-full h-full object-cover"
-              />
+            <div className="flex items-center justify-center">
+              <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-border">
+                <img 
+                  src={octopusImage} 
+                  alt="" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
