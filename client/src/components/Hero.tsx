@@ -23,8 +23,8 @@ export default function Hero() {
         <div className="lg:w-1/2 lg:pr-12 relative">
           <div className="relative">
             <h1 className="font-bold leading-tight mb-10 text-left" data-testid="text-hero-title">
-              <span className="text-xl md:text-2xl lg:text-3xl text-primary block mb-6">{"{"}curlybraces.ai{"}"}</span>
-              <span className="text-3xl md:text-4xl lg:text-5xl text-foreground block">Introducing Rosie: AI onboarding and growth for mental health & wellness practices</span>
+              <span className="text-lg md:text-xl lg:text-2xl text-primary block mb-6">{"{"}curlybraces.ai{"}"}</span>
+              <span className="text-2xl md:text-3xl lg:text-4xl text-foreground block">Introducing Rosie: AI onboarding and growth for mental health & wellness practices</span>
             </h1>
 
             <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed text-left" data-testid="text-hero-subtitle">
