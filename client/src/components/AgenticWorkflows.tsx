@@ -1,7 +1,7 @@
 import { Shield, Lock, Eye, FileCheck } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import snakeImage from "@assets/stock_images/snake_vertical_portr_38647f22.jpg";
+import generatedNodeImage from "@assets/generated_images/abstract_glowing_circuit_node_cyan.png";
 
 export default function AgenticWorkflows() {
   const capabilities = [
@@ -56,9 +56,9 @@ export default function AgenticWorkflows() {
           <div className="lg:w-1/2 flex items-center justify-center">
             <div className="w-full max-w-md relative aspect-[3/4] rounded-xl overflow-hidden border border-border">
               <img
-                src={snakeImage}
-                alt="Agent G visual representative"
-                className="w-full h-full object-cover"
+                src={generatedNodeImage}
+                alt="Rosie Agent G Processing Node"
+                className="w-full h-full object-cover brightness-90 hover:brightness-110 transition-all duration-500"
               />
             </div>
           </div>
